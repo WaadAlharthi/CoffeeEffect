@@ -1,0 +1,97 @@
+html, body {
+	background: rgb(251,231,178) ;
+	margin: 10;
+	padding: 20;
+	font-family: Verdana, arial, helvetica, sans-serif;
+	font-size: 11pt;
+	text-align: center;
+	color: rgb(20,20,20);
+	height: 100%;
+}
+
+ul, li{
+	padding: 60;
+	text-align: left;
+
+}
+
+h1  {
+	color: rgb(20,20,20);
+	font-family: Verdana, arial, helvetica, sans-serif;
+	text-align: center;
+	padding: 5px;
+	font-size: 24px;
+	margin: 0px;
+}
+
+h2  {
+	color: rgb(20,20,20);
+	font-family: Verdana, arial, helvetica, sans-serif;
+	text-align: center;
+	padding: 5px;
+	font-size: 21px;
+	margin: 0px;
+}
+
+h3 {
+	color: rgb(20,20,20);
+	font-family: Verdana, arial, helvetica, sans-serif;
+	text-align: center;
+	padding: 0;
+	font-size: 18px;
+	margin: 0px;
+}
+
+h4  {
+	color: rgb(20,20,20);
+	font-family: Verdana, arial, helvetica, sans-serif;
+	text-align: center;
+	padding: 5px;
+	font-size: 14px;
+	margin: 0px;
+}
+
+#links  {
+	float: left;
+	width: 165px;
+	margin: 5px;
+	border: 1px groove black;
+	
+}
+
+#links a {
+	display: block;
+	border-top: 1px groove black;
+	border-collapse:collapse;
+	padding: 4px;
+	text-decoration:none;
+	background:transparent;
+}
+
+
+
+a:link    {color: #01145e;}
+a:visited {color: #01145e;}
+a:hover   {color: rgb(255,22,20)}
+a:active  {color: rgb(255,22,20)}
+
+#main {
+	margin: 10px 10px 0px 200px;
+	padding-bottom: 45px; /* bottom padding for footer */
+	min-height: 100%;
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+	position: absolute;
+	bottom: 0; /* stick to bottom */
+	border-top: 1px solid black;
+	text-align: center;
+	font-size: 9pt;
+}
+
+#footer p {
+	padding:1em;
+	margin:0;
+}
