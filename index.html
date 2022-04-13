@@ -7,7 +7,17 @@
 		<h1>How much caffien is too much for me? </h1>
  
  		<p> How many cups of coffee did you consume yesterday? </p>
-		<script> viewof n = Inputs.range([1, 10], {label: html`Top <i>n</i>`, step: 1}) </script> 
+		<input type="number" min="0" max="11" step="0.1" name="number" required="" placeholder="0–11" id="oi-ec050e-4">
+		
+		
+		<form class="oi-ec050e">
+    <label for="oi-ec050e-4">Gain</label><div class="oi-ec050e-input">
+      <input type="number" min="0" max="11" step="0.1" name="number" required="" placeholder="0–11" id="oi-ec050e-4"><input type="range" min="0" max="11" step="0.1" name="range">
+    </div>
+  </form>
+		
+		
+		viewof n = Inputs.range([1, 10], {label: html`Top <i>n</i>`, step: 1})  
 		<p> When do you want to sleep? </p>
 		<p> Result: </p>
 		<iframe width="100%" height="500" frameborder="0" 
