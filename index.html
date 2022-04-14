@@ -9,7 +9,7 @@
 		<form>
     			<label> How many cups of coffee did you consume yesterday? </label>
 			<div>
-				<input name="quantity" type="range" min="0" max="10" step="1" name="range">
+				<input name="quantity" type="range" min="1" max="10" step="1" name="range">
     			</div>
 			
 			<label> At what time? </label>
@@ -30,11 +30,10 @@
 		
 		<script>
 			function getValues() {
-  				const quantity = form.getElementsByName("quantity").value;
-				const caf_time = form.getElementsByName("caf_time").value;
-				const bedtime = form.getElementsByName("bedtime").value;
+  				const quantity = document.getElementsByName("quantity").value;
+				const caf_time = document.getElementsByName("caf_time").value;
+				const bedtime = document.getElementsByName("bedtime").value;
 				document.getElementById("results").innerHTML =caf_time;
-
 			}
 		</script>
 
