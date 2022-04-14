@@ -26,14 +26,18 @@
 		
 		<button type="button" onclick="getValues();"> Result </button>
 		
-		<p id="results"> </p>
+		<p id="result1"> r1 </p>
+		<p id="result2">e2 </p>
+		<p id="result3"> r3</p>
 		
 		<script>
 			function getValues() {
   				let quantity = document.getElementsById("quantity").value;
 				let caf_time = document.getElementsById("caf_time").value;
 				let bedtime = document.getElementsById("bedtime").value;
-				document.getElementById("results").innerHTML =caf_time;
+				document.getElementById("result1").innerHTML =quantity;
+				document.getElementById("result2").innerHTML =caf_time;
+				document.getElementById("result3").innerHTML =bedtime;
 			}
 		</script>
 
