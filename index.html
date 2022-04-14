@@ -7,23 +7,29 @@
 		<h1>How much caffien is too much for me? </h1>
 		
 		<form>
-    			<label > How many cups of coffee did you consume yesterday?</label>
+    			<label> How many cups of coffee did you consume yesterday? </label>
 			<div>
 				<input type="range" min="0" max="10" step="1" name="range">
     			</div>
 			
-			<label for="appt-time">At what time? </label>
+			<label> At what time? </label>
 			<div>
-				<input type="time" name="appt-time" value="9:30">
+				<input type="time" value="9:30">
+			</div>
+			
+			<label> When do you want to sleep? </label>
+			<div>
+				<input type="time" value="11:30">
 			</div>
   		</form>
+		
 		<script>
 			function getVal() {
   				const val = document.querySelector('input').value;
   				console.log(val);
 			}
 		</script>
-		<p> When do you want to sleep? </p>
+
 		<p> Result: </p>
 		
 		<iframe width="100%" height="500" frameborder="0" 
