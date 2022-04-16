@@ -16,17 +16,16 @@
 			
 			<label> At what time? </label>
 			<div>
-				<input type="time" value="09:00" id="caf_time" name="caf_time">
+				<input type="time" value="09:00" onclick="getValues()" id="caf_time" name="caf_time">
 			</div>
 			
 			<label> When do you want to sleep? </label>
 			<div>
-				<input type="time" value="11:00"  id="bedtime" name="bedtime">
+				<input type="time" value="11:00" onclick="getValues()" id="bedtime" name="bedtime">
 			</div>
 			
   		</form>
-		
-		<button type="button" onclick="getValues()"> Result </button>
+
 		<div>
 		<p id="result1">  </p>
 		<p id="result2">  </p>
