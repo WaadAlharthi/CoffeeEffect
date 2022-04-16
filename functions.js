@@ -1,5 +1,5 @@
 function getValues() {
-  var quantity = document.querySelector("#quantity").value;
+  	var quantity = document.querySelector("#quantity").value;
 	var caf_time = document.querySelector("#caf_time").value;
 	var bedtime = document.querySelector("#bedtime").value;
 				
