@@ -1,14 +1,10 @@
 function getValues() {
-	var q = document.getElementsById("quantity");
-	var c = document.getElementsById("caf_time");
-	var b = document.getElementsById("bedtime");
-  
-        var quantity = q.value;
-	var caf_time = c.value;
-	var bedtime = b.value;
-  
+  var quantity = document.querySelector("#quantity").value;
+	var caf_time = document.querySelector("#caf_time").value;
+	var bedtime = document.querySelector("#bedtime").value;
 				
-	document.getElementById("result1").innerHTML = quantity;
-	document.getElementById("result2").innerHTML = caf_time;
-	document.getElementById("result3").innerHTML = bedtime;
+	document.querySelector("#result1").innerHTML = quantity;
+	document.querySelector("#result2").innerHTML = caf_time;
+	document.querySelector("#result3").innerHTML = bedtime;
+
 }
