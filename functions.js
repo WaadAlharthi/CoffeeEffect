@@ -6,5 +6,8 @@ function getValues() {
 	document.querySelector("#result1").innerHTML = quantity;
 	document.querySelector("#result2").innerHTML = caf_time;
 	document.querySelector("#result3").innerHTML = bedtime;
+	
+	document.querySelector(".second").fill = red;
+	
 
 }
