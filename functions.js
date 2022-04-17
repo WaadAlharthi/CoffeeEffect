@@ -7,7 +7,7 @@ function getValues() {
 	document.querySelector("#result2").innerHTML = caf_time;
 	document.querySelector("#result3").innerHTML = bedtime;
 	
-	document.querySelector(".second").style.fill = url("https://github.com/WaadAlharthi/CoffeeEffect/blob/950e1f03173d015a00f252a49501daa7edbe21b3/ezgifcom-gif-maker3.gif");
+	document.querySelector(".second").style.fill = url("https://waadalharthi.github.io/CoffeeEffect/ezgifcom-gif-maker3.gif");
 	
 
 }
