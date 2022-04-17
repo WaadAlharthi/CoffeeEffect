@@ -8,7 +8,7 @@ function getValues() {
 	document.querySelector("#result3").innerHTML = bedtime;
 	
 	document.querySelector(".second").style.fill = 'red';
-	document.querySelector(".third").style.src = 'ezgifcom-gif-maker3.gif';
+	document.querySelector(".third").src = 'ezgifcom-gif-maker3.gif';
 	
 
 }
