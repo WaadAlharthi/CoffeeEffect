@@ -11,12 +11,12 @@
 		<form>
     			<label> How many cups of coffee did you consume yesterday? </label>
 			<div>
-				<input type="range" min="0" max="10" step="1" onclick="getValues()" id="quantity" name="quantity">
+				<input type="range" min="0" max="10" step="1" onmouseover="getValues()" onclick="getValues()" id="quantity" name="quantity">
     			</div>
 			
 			<label> At what time? </label>
 			<div>
-				<input type="time" value="09:00" onclick="getValues()" id="caf_time" name="caf_time">
+				<input type="time" value="09:00" onmouseover="getValues()" onclick="getValues()" id="caf_time" name="caf_time">
 			</div>
 			
 			<label> When do you want to sleep? </label>
@@ -44,6 +44,7 @@
       </svg>
   
     <div class="third">
+	    <img src="clock1.svg">
       <svg>
   	    <circle cx="100" cy="100" r="30" stroke="blue" stroke-width="2" />
       </svg>
