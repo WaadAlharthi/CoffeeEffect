@@ -9,6 +9,44 @@ html, body {
 	height: 100%;
 }
 
+div.first {
+      position: relative;
+      left: 10px;
+      top:0px;
+      width:500px;
+      height:500px;
+      border:1px solid #CCCCCC;
+      fill:none;
+    }
+    div.second {
+      position: relative;
+      top:-200px;
+      left: -80px;
+      width:200px;
+      height:200px;
+      border:1px solid #CCCCCC;
+      fill:none;
+    }
+    div.third {
+      position: relative;
+      top:-150px;
+      left: 100px;
+      width:200px;
+      height:200px;
+      border:1px solid #CCCCCC;
+      fill:none;
+    }
+    
+    div.forth {
+      position: relative;
+      top:-150px;
+      left: 100px;
+      width:200px;
+      height:200px;
+      border:1px solid #CCCCCC;
+      fill:none;
+    }
+
 ul, li{
 	padding: 60;
 	text-align: left;
