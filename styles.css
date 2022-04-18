@@ -10,11 +10,12 @@ html, body {
 }
 
 div.clock {
-	display: flex;
+	position: relative;
       border:1px solid #CCCCCC;
       fill:none;
     }
 div.first {
+	position: absolute;
 	margin: auto; 
 bottom: 20%; 
   left: 20%;
