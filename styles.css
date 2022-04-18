@@ -1,5 +1,5 @@
 html, body {
-	background: rgb(0, 248, 230) ;
+	background: rgb(255, 248, 230) ;
 	margin: 10;
 	padding: 20;
 	font-family: Verdana, arial, helvetica, sans-serif;
@@ -15,10 +15,9 @@ div.clock {
       fill:none;
     }
 div.first {
-	top:50%;
+	margin: auto; 
       position: absolute;
-      top:-200px;
-      left: -80px;
+
       width:200px;
       height:200px;
       border:1px solid #CCCCCC;
@@ -26,8 +25,7 @@ div.first {
     }
     div.second {
       position: absolute;
-      top:-200px;
-      left: -80px;
+	margin: auto;
       width:200px;
       height:200px;
       border:1px solid #CCCCCC;
@@ -35,8 +33,7 @@ div.first {
     }
     div.third {
       position: absolute;
-      top:-150px;
-      left: 100px;
+margin: auto;
       width:200px;
       height:200px;
       border:1px solid #CCCCCC;
@@ -45,8 +42,7 @@ div.first {
 
     div.forth {
       position: absolute;
-      top:-150px;
-      left: 100px;
+margin: auto;
       width:200px;
       height:200px;
       border:1px solid #CCCCCC;
