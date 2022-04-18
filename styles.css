@@ -16,16 +16,16 @@ html, body {
 .first {
 	position: absolute;
 	margin: auto; 
-bottom: 40%; 
-  left: 40%;
+bottom: 30%; 
+  left: 30%;
       width:150px;
       height:150px;
       fill:none;
     }
     .second {
 	    position: absolute;
-top: 40%; 
-  right: 40%;
+top: 30%; 
+  right: 30%;
 	margin: auto;
       width:150px;
       height:150px;
@@ -33,8 +33,8 @@ top: 40%;
     }
     .third {
 	    position: absolute;
-      bottom: 40%; 
-  right: 40%;
+      bottom: 30%; 
+  right: 30%;
 margin: auto;
       width:150px;
       height:150px;
@@ -43,8 +43,8 @@ margin: auto;
 
     .forth {
       position: absolute;
-      top: 40%; 
-  left: 40%;
+      top: 30%; 
+  left: 30%;
 margin: auto;
       width:150px;
       height:150px;
