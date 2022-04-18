@@ -1,8 +1,8 @@
 function getValues() {
-  	var caf_time = document.querySelector("#cof_time").value;
+  	var cof_time = document.querySelector("#cof_time").value;
 	var quantity = document.querySelector("#quantity").value;
 	
-	var bedtime = document.querySelector("#med_time").value;
+	var med_time = document.querySelector("#med_time").value;
 	var bedtime = document.querySelector("#bedtime").value;
 	
 	document.querySelector("#result1").innerHTML = cof_time;			
