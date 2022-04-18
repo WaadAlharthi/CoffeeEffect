@@ -11,13 +11,15 @@ html, body {
 
 div.clock {
       position: relative;
-      width:200px;
-      height:200px;
+      left: 0px;
+      top:0px;
       border:1px solid #CCCCCC;
       fill:none;
     }
 div.first {
       position: absolute;
+      top:-200px;
+      left: -80px;
       width:200px;
       height:200px;
       border:1px solid #CCCCCC;
@@ -25,6 +27,8 @@ div.first {
     }
     div.second {
       position: absolute;
+      top:-200px;
+      left: -80px;
       width:200px;
       height:200px;
       border:1px solid #CCCCCC;
@@ -32,14 +36,18 @@ div.first {
     }
     div.third {
       position: absolute;
+      top:-150px;
+      left: 100px;
       width:200px;
       height:200px;
       border:1px solid #CCCCCC;
       fill:none;
     }
-    
+
     div.forth {
       position: absolute;
+      top:-150px;
+      left: 100px;
       width:200px;
       height:200px;
       border:1px solid #CCCCCC;
