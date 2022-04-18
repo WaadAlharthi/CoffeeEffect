@@ -11,48 +11,43 @@ html, body {
 
 .clock {
 	position: relative;
-      border:1px solid #CCCCCC;
       fill:none;
     }
 .first {
 	position: absolute;
 	margin: auto; 
-bottom: 30%; 
-  left: 30%;
+bottom: 40%; 
+  left: 40%;
       width:150px;
       height:150px;
-      border:1px solid #CCCCCC;
       fill:none;
     }
     .second {
 	    position: absolute;
-top: 30%; 
-  right: 30%;
+top: 40%; 
+  right: 40%;
 	margin: auto;
       width:150px;
       height:150px;
-      border:1px solid #CCCCCC;
       fill:none;
     }
     .third {
 	    position: absolute;
-      bottom: 30%; 
-  right: 30%;
+      bottom: 40%; 
+  right: 40%;
 margin: auto;
       width:150px;
       height:150px;
-      border:1px solid #CCCCCC;
       fill:none;
     }
 
     .forth {
       position: absolute;
-      top: 30%; 
-  left: 30%;
+      top: 40%; 
+  left: 40%;
 margin: auto;
       width:150px;
       height:150px;
-      border:1px solid #CCCCCC;
       fill:none;
     }
 
