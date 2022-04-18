@@ -14,7 +14,7 @@ html, body {
       fill:none;
     }
 .first {
-	position: relative;
+	position: absolute;
 bottom: 30%; 
   left: 30%;
       width:150px;
@@ -22,7 +22,7 @@ bottom: 30%;
       fill:none;
     }
     .second {
-	    position: relative;
+	    position: absolute;
 top: 30%; 
   right: 30%;
       width:150px;
