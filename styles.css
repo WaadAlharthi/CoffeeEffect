@@ -1,5 +1,5 @@
 html, body {
-	background: rgb(0, 248, 230) ;
+	background: rgb(255, 248, 230) ;
 	margin: 10;
 	padding: 20;
 	font-family: Verdana, arial, helvetica, sans-serif;
@@ -11,20 +11,19 @@ html, body {
 
 div.clock {
 	display: flex;
-	position: relative;
       border:1px solid #CCCCCC;
       fill:none;
     }
 div.first {
 	margin: auto; 
-      position: absolute;
+
       width:200px;
       height:200px;
       border:1px solid #CCCCCC;
       fill:none;
     }
     div.second {
-      position: absolute;
+
 	margin: auto;
       width:200px;
       height:200px;
@@ -32,7 +31,6 @@ div.first {
       fill:none;
     }
     div.third {
-      position: absolute;
 margin: auto;
       width:200px;
       height:200px;
