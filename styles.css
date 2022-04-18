@@ -10,7 +10,7 @@ html, body {
 }
 
 div.clock {
-      position: relative;
+	display: flex;
       border:1px solid #CCCCCC;
       fill:none;
     }
