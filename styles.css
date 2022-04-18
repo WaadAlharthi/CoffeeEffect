@@ -14,7 +14,7 @@ html, body {
       fill:none;
     }
 .first {
-	position: absolute;
+	position: relative;
 bottom: 30%; 
   left: 30%;
       width:150px;
@@ -22,7 +22,7 @@ bottom: 30%;
       fill:none;
     }
     .second {
-	    position: absolute;
+	    position: relative;
 top: 30%; 
   right: 30%;
       width:150px;
@@ -30,7 +30,7 @@ top: 30%;
       fill:none;
     }
     .third {
-	    position: absolute;
+	    position: relative;
       bottom: 30%; 
   right: 30%;
       width:150px;
@@ -39,7 +39,7 @@ top: 30%;
     }
 
     .forth {
-      position: absolute;
+      position: relative;
       top: 30%; 
   left: 30%;
       width:150px;
