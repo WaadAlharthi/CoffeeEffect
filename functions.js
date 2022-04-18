@@ -7,7 +7,6 @@ function getValues() {
 	document.querySelector("#result2").innerHTML = caf_time;
 	document.querySelector("#result3").innerHTML = bedtime;
 	
-	document.querySelector(".second").style.fill = 'red';
 	document.querySelector(".third").src = 'ezgifcom-gif-maker3.gif';
 	
 
