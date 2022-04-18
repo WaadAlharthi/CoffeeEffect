@@ -1,11 +1,15 @@
 function getValues() {
-  	var quantity = document.querySelector("#quantity").value;
-	var caf_time = document.querySelector("#caf_time").value;
+  	var caf_time = document.querySelector("#cof_time").value;
+	var quantity = document.querySelector("#quantity").value;
+	
+	var bedtime = document.querySelector("#med_time").value;
 	var bedtime = document.querySelector("#bedtime").value;
-				
-	document.querySelector("#result1").innerHTML = quantity;
-	document.querySelector("#result2").innerHTML = caf_time;
-	document.querySelector("#result3").innerHTML = bedtime;
+	
+	document.querySelector("#result1").innerHTML = cof_time;			
+	document.querySelector("#result2").innerHTML = quantity;
+	
+	document.querySelector("#result3").innerHTML = med_time;
+	document.querySelector("#result4").innerHTML = bedtime;
 	
 	document.querySelector(".first").src = 'ezgifcom-gif-maker5.gif';
 	document.querySelector(".second").src = 'ezgifcom-gif-maker3.gif';
