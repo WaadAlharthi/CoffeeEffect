@@ -15,8 +15,7 @@ div.clock {
       fill:none;
     }
 div.first {
-	display: flex;
-justify-content: center;
+	top:50%;
       position: absolute;
       top:-200px;
       left: -80px;
