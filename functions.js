@@ -1,3 +1,4 @@
+document.querySelector("#quantity").value = 0;
 function getValues() {
   var cof_time = document.querySelector("#cof_time").value;
   var quantity = document.querySelector("#quantity").value;
