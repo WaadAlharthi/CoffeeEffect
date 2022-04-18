@@ -7,17 +7,22 @@
 		<h1> How much caffeine is too much for me? </h1>
 		
 		<form>
-    			<label> How many cups of coffee did you consume yesterday? </label>
+			
+			<label> When did you drink your coffee yesterday? </label>
+			<div>
+				<input type="time" value="09:00" onmouseover="getValues()" onclick="getValues()" id="cof_time" name="cof_time">
+			</div>
+			<label>  With how many espresso shots?</label>
 			<div>
 				<input type="range" min="0" max="10" step="1" onmouseover="getValues()" onclick="getValues()" id="quantity" name="quantity">
     			</div>
 			
-			<label> At what time? </label>
+			<label> When did you consume medications containing caffeine? </label>
 			<div>
-				<input type="time" value="09:00" onmouseover="getValues()" onclick="getValues()" id="caf_time" name="caf_time">
+				<input type="time" value="09:00" onmouseover="getValues()" onclick="getValues()" id="med_time" name="med_time">
 			</div>
 			
-			<label> When do you want to sleep? </label>
+			<label> When did you intend to sleep? </label>
 			<div>
 				<input type="time" value="11:00" onmouseover="getValues()" onclick="getValues()" id="bedtime" name="bedtime">
 			</div>
