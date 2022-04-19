@@ -20,7 +20,7 @@ html, body {
       height:150px;
       fill:none;
     z-index: 1;
-	top:250px;
+	top:420px;
 	opacity: 0.8;
     }
     .second {
@@ -28,7 +28,7 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	top:350px;
+	top:370px;
 	opacity: 0.8;
       z-index: 1;
     }
@@ -37,7 +37,7 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	top:250px;
+	top:370px;
 	opacity: 0.8;
       z-index: 1;
     }
@@ -47,7 +47,7 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	 top:350px;
+	 top:420px;
 	opacity: 0.8;
       z-index: 1;
     }
