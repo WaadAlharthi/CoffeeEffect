@@ -12,7 +12,7 @@ html, body {
 .clock {
 	position: relative;
       fill:none;
-	z-index: 2;
+	    z-index: 2;
     }
 .first {
 	position: absolute;
@@ -21,6 +21,7 @@ bottom: 30%;
       width:150px;
       height:150px;
       fill:none;
+  z-index: auto;
     }
     .second {
 	    position: absolute;
@@ -29,23 +30,26 @@ top: 30%;
       width:150px;
       height:150px;
       fill:none;
+      z-index: auto;
     }
     .third {
-	    position: relative;
+	    position: absolute;
       bottom: 30%; 
   right: 30%;
       width:150px;
       height:150px;
       fill:none;
+      z-index: auto;
     }
 
     .forth {
-      position: relative;
+      position: absolute;
       top: 30%; 
   left: 30%;
       width:150px;
       height:150px;
       fill:none;
+      z-index: auto;
     }
 
 ul, li{
