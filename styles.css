@@ -12,6 +12,7 @@ html, body {
 .clock {
 	position: relative;
       fill:none;
+	z-index: 2;
     }
 .first {
 	position: absolute;
