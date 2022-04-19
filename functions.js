@@ -9,13 +9,21 @@ function getValues() {
   //  { x: prev x+100, y: prev y-? },
   // continure untill bedtime
   //  { x: bedtime , y: depends?} ]
-  start = Math.min(med_time, cof_time);
   
-	document.querySelector("#result1").innerHTML =start;
+  med = med_time.substring(0, 2);
+	med = parseInt(med);
+  
+  cof = cof_time.substring(0, 2);
+	cof = parseInt(cof);
+  
+  
+  start = Math.min(med, cof);
+  
+  document.querySelector("#result1").innerHTML =start;
   
   
   //var datapoints = [{x:},
-  //                  {},
+  //                  { indexLabel: "highest"},
   //                  {}]
   //chart.options.data = datapoints
 	
