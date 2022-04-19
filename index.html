@@ -35,8 +35,7 @@
 
 		<div position="relative" width="200" height="200" border="5px" solid= "black"> 
       			<svg width="200" height="200">
-  	    			<circle  class="clock" cx="100" cy="100" r="90" stroke="black" stroke-width="2" fill="none"/>
-      			
+				<line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />      			
 
     		<div >
             <img class="first" object-fit="contain" src="ezgifcom-gif-maker3.gif">  
@@ -60,42 +59,6 @@
 		<div id="chartContainer" style="position:relative; height: 300px; width: 600px;">
 			</div></div>
 
-		<script type="text/javascript">
-	window.onload = function () {
-		var chart = new CanvasJS.Chart("chartContainer",
-    {
-        axisY:{
-            valueFormatString:"#"
-        },
-        axisX:{
-           valueFormatString:"##:##"
-        },
-      data: [
-      {        
-        type: "splineArea",
-	color: "rgba(215,130,55,.9)",
-	fillOpacity: .7,
-        xValueFormatString:" ##:##",
-        yValueFormatString:"~#",
-        dataPoints: [
-        { x: 1400, y: 160 },
-        { x: 1500, y: 130 },
-        { x: 1600, y: 110 },
-        { x: 1700, y: 90 },
-        { x: 1800, y: 70 },
-        { x: 1900, y: 60},
-	      { x: 2000, y: 40},
-	      { x: 2100, y: 20},
-	      { x: 2200, y: 10},
-	      { x: 2300, y: 00}
-          ]
-      }
-      ]
-    });
-
-    chart.render();
-  }
-	</script>
 
 			
 	
