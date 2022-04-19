@@ -16,26 +16,25 @@ html, body {
     }
 .first {
 	position: absolute;
-	 top: 0px;
-        right: 0px;
       width:150px;
       height:150px;
       fill:none;
-    z-index: auto;
+    z-index: -1;
+	opacity: 0.8;
     }
     .second {
 	    position: absolute;
       width:150px;
       height:150px;
       fill:none;
-      z-index: auto;
+      z-index: -1;
     }
     .third {
 	    position: absolute;
       width:150px;
       height:150px;
       fill:none;
-      z-index: auto;
+      z-index: -1;
     }
 
     .forth {
@@ -43,7 +42,7 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-      z-index: auto;
+      z-index: -1;
     }
 
 
