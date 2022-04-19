@@ -20,6 +20,7 @@ html, body {
       height:150px;
       fill:none;
     z-index: 1;
+	top:25%;
 	opacity: 0.8;
     }
     .second {
@@ -27,6 +28,7 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
+	    top:30%;
       z-index: 1;
     }
     .third {
