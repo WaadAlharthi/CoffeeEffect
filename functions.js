@@ -36,7 +36,7 @@ function getValues() {
   
   
   var datapoints = [{x:startX, y: startY}]
-  chart.options.data = datapoints;
+	document.querySelector("#chartContainer").options.data = datapoints;
 	
 	chart.render();
 	
