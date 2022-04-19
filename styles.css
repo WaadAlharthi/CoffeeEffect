@@ -16,17 +16,13 @@ html, body {
     }
 .first {
 	position: absolute;
-bottom: 30%; 
-  left: 30%;
       width:150px;
       height:150px;
       fill:none;
-  z-index: auto;
+    z-index: auto;
     }
     .second {
 	    position: absolute;
-top: 30%; 
-  right: 30%;
       width:150px;
       height:150px;
       fill:none;
@@ -34,8 +30,6 @@ top: 30%;
     }
     .third {
 	    position: absolute;
-      bottom: 30%; 
-  right: 30%;
       width:150px;
       height:150px;
       fill:none;
@@ -44,13 +38,13 @@ top: 30%;
 
     .forth {
       position: absolute;
-      top: 30%; 
-  left: 30%;
       width:150px;
       height:150px;
       fill:none;
       z-index: auto;
     }
+
+
 
 ul, li{
 	padding: 60;
