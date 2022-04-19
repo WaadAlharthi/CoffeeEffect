@@ -18,21 +18,16 @@ function getValues() {
   
   quantity = parseInt(quantity);
   
-  var startX;
-  var startY;
+  var startX = cof;
+  var startY = 80*quantity;
   
   if (med < cof) 
   {
     startX = med;
     startY = 200;
   } 
-  else 
-  {
-    startX = cof; 
-    startY = (80*quantity);
-  }
     
-  document.querySelector("#result1").innerHTML =start;
+  document.querySelector("#result1").innerHTML =startX ;
   
   
   var datapoints = [{x:startX, y: startY}]
