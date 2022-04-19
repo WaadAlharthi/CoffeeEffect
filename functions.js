@@ -38,7 +38,7 @@ function getValues() {
   var datapoints = [{x:startX, y: startY}]
 	document.querySelector("#chartContainer").options.data = datapoints;
 	
-	chart.render();
+	document.querySelector("#chartContainer").render();
 	
 	document.querySelector(".first").src = 'ezgifcom-gif-maker5.gif';
 	document.querySelector(".second").src = 'ezgifcom-gif-maker3.gif';
