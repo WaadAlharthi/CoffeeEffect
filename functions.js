@@ -9,9 +9,9 @@ function getValues() {
   //  { x: prev x+100, y: prev y-? },
   // continure untill bedtime
   //  { x: bedtime , y: depends?} ]
-  start = Math.min(med_time, cof_time));
+  start = Math.min(med_time, cof_time);
   
-	document.querySelector("#result1").value =start;
+	document.querySelector("#result1").innerHTML =start;
   
   
   //var datapoints = [{x:},
