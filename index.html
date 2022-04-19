@@ -57,7 +57,28 @@
     </div>
 			
 		</div>
-		
+		<div>
+		<svg width="440" height="440">
+<defs>
+    <filter id="f1" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+    </filter>
+  </defs>
+  <path d="M100,
+  100 h200 a50, 
+  30 0 0 1 20,
+  20 v200 a20,
+  20 0 0 1 -20,
+  20 h-200 a20,
+  20 0 0 1 -20,
+  -20 v-200 a20,
+  20 0 0 1 20,
+  -20 z" 
+  fill="red" stroke="black" stroke-width="1" />
+ 
+  
+</svg>
+		</div>
 		
 		<div id="chartContainer" style="height: 300px; width: 100%;">
 
@@ -71,10 +92,7 @@
 			data: [
 			{        
 				type: "splineArea",
-				dataPoints: [
-				{x: new Date(1992,0), y: 2506000},     
-				{x: new Date(1993,0), y: 2798000},     
-				{x: new Date(1994,0), y: 3386000},     
+				dataPoints: [    
 				{x: new Date(1995,0), y: 6944000},     
 				{x: new Date(1996,0), y: 6026000},     
 				{x: new Date(1997,0), y: 2394000},     
