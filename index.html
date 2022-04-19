@@ -93,26 +93,35 @@
 		<script type="text/javascript">
 	window.onload = function () {
 		var chart = new CanvasJS.Chart("chartContainer",
-		{
-			title:{
-				text: "Spline Area Chart"
-			},    		
-			data: [
-			{        
-				type: "splineArea",
-				dataPoints: [    
-					
-				{ x: new Time(9), y: 200 },
-        			{ x: new Time(10), y: 180 },
-        			{ x: new Time(11), y: 160 },
-        			{ x: new Time(12), y: 140 },
-				]
-			}             
-			]
-		});
+    {
+        axisY:{
+            valueFormatString:"#"
+        },
+        axisX:{
+           valueFormatString:"##:##"
+        },
+      data: [
+      {        
+        type: "spline",
+        xValueFormatString:" ##:##",
+        yValueFormatString:"~#",
+        dataPoints: [
+        { x: 0900, y: 200 },
+        { x: 1000, y: 180},
+        { x: 1100, y: 160 },
+        { x: 1200, y: 140 },
+        { x: 1300, y: 100 },
+        { x: 1400, y: 80 },
+        { x: 1500, y: 40 },
+        { x: 1600, y: 20 },
+        { x: 1700, y: 10}
+        ]
+      }
+      ]
+    });
 
-	chart.render();
-	}
+    chart.render();
+  }
 	</script>
 	  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
