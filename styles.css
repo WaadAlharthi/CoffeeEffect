@@ -19,7 +19,7 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-    z-index: -1;
+    z-index: 1;
 	opacity: 0.8;
     }
     .second {
@@ -27,7 +27,7 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-      z-index: -1;
+      z-index: 1;
     }
     .third {
 	    position: absolute;
