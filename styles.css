@@ -52,7 +52,10 @@ html, body {
       z-index: 1;
     }
 
-
+#chartContainer{
+	text-align: center;
+	
+}
 
 ul, li{
 	padding: 60;
