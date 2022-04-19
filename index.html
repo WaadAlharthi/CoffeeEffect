@@ -2,6 +2,8 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="https://waadalharthi.github.io/CoffeeEffect/styles.css">
 		<script src="https://waadalharthi.github.io/CoffeeEffect/functions.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
 	</head>
 	<body>
 		<h1> How much caffeine is too much for me? </h1>
@@ -14,7 +16,7 @@
 			</div>
 			<label>  With how many espresso shots?</label>
 			<div>
-				<input type="range" min="0" max="10" step="1" value="2" onmouseover="getValues()" onclick="getValues()" id="quantity" name="quantity">
+				<input type="range" min="1" max="3" step="1" value="2" onmouseover="getValues()" onclick="getValues()" id="quantity" name="quantity">
     			</div>
 			
 			<label> When did you consume medications containing caffeine? </label>
@@ -80,11 +82,11 @@
         { x: 1700, y: 90 },
         { x: 1800, y: 70 },
         { x: 1900, y: 60},
-	{ x: 2000, y: 40},
-	{ x: 2100, y: 20},
-	{ x: 2200, y: 10},
-	{ x: 2300, y: 00}
-        ]
+	      { x: 2000, y: 40},
+	      { x: 2100, y: 20},
+	      { x: 2200, y: 10},
+	      { x: 2300, y: 00}
+          ]
       }
       ]
     });
@@ -92,7 +94,6 @@
     chart.render();
   }
 	</script>
-	  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 			
 	
