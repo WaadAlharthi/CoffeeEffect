@@ -58,9 +58,11 @@
 		</div>
 		
 		
-		<div id="chartContainer"  src="https://canvasjs.com/assets/script/canvasjs.min.js" style="height: 300px; width: 100%;">
-		<script>
-      var chart = new CanvasJS.Chart("chartContainer",
+		<div id="chartContainer" style="height: 300px; width: 100%;">
+
+		<script type="text/javascript">
+	window.onload = function () {
+		var chart = new CanvasJS.Chart("chartContainer",
 		{
 			title:{
 				text: "Spline Area Chart"
@@ -93,8 +95,8 @@
 
 	chart.render();
 	}
-      </script>
-
+	</script>
+	  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 	</body>
 </html>
