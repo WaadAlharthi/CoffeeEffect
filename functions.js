@@ -16,23 +16,34 @@ function getValues() {
   cof = cof_time.substring(0, 2);
 	cof = parseInt(cof);
   
+  quantity = parseInt(quantity);
   
-  start = Math.min(med, cof);
+  var startX;
+  var startY;
   
+  if (med < cof) 
+  {
+    startX = med;
+    startY = 200;
+  } 
+  else 
+  {
+    startX = cof; 
+    startY = (80*quantity);
+  }
+    
   document.querySelector("#result1").innerHTML =start;
   
   
-  //var datapoints = [{x:},
-  //                  { indexLabel: "highest"},
-  //                  {}]
-  //chart.options.data = datapoints
+  var datapoints = [{x:startX, y: startY}]
+  chart.options.data = datapoints;
+	
+	chart.render();
 	
 	document.querySelector(".first").src = 'ezgifcom-gif-maker5.gif';
 	document.querySelector(".second").src = 'ezgifcom-gif-maker3.gif';
 	document.querySelector(".third").src = 'ezgifcom-gif-maker4.gif';
-  document.querySelector(".forth").src = 'ezgifcom-gif-maker6.gif';
-  
-  
-	
+ 	document.querySelector(".forth").src = 'ezgifcom-gif-maker6.gif';
+  	
 	
 }
