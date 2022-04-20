@@ -47,13 +47,24 @@
 		
 
 		<div style="position:relative;">
-		<div id="chartContainer" style="position:relative; top:800px; height: 300px; width: 600px;">
+		<div id="splineArea" style="position:relative; top:600px; height: 300px; width: 600px;">
 			</div></div>
+		
+		
+		<div id="funnel" style="height: 300px; width: 100%;"></div>
+		
 
 <script>
   
 
 function displayGraph() {
+	
+	  document.querySelector(".first").src = 'ezgifcom-gif-maker5.gif';
+	document.querySelector(".second").src = 'ezgifcom-gif-maker3.gif';
+	document.querySelector(".third").src = 'ezgifcom-gif-maker4.gif';
+ 	document.querySelector(".forth").src = 'ezgifcom-gif-maker6.gif';
+	
+	
   var cof_time = document.querySelector("#cof_time").value;
   var quantity = document.querySelector("#quantity").value;
 	
@@ -91,7 +102,7 @@ function displayGraph() {
                {x:(bed*100), y: (startY/(bed-startX))}];
                
   
-		var chart = new CanvasJS.Chart("chartContainer",
+	var splineAreaChart = new CanvasJS.Chart("splineArea",
     {
         axisY:{
             valueFormatString:"#"
@@ -111,13 +122,33 @@ function displayGraph() {
       ]
     });
 
-    chart.render();
+    splineAreaChart.render();
   
   
-  document.querySelector(".first").src = 'ezgifcom-gif-maker5.gif';
-	document.querySelector(".second").src = 'ezgifcom-gif-maker3.gif';
-	document.querySelector(".third").src = 'ezgifcom-gif-maker4.gif';
- 	document.querySelector(".forth").src = 'ezgifcom-gif-maker6.gif';
+
+
+	
+	var funnelChart = new CanvasJS.Chart("funnel", {
+	theme: "light2",
+	title:{
+		text: "Company Recruitment Process"
+	},
+	data: [{
+		type: "funnel",
+		indexLabel: "{label} [{y}%]",
+		neckHeight: 0,
+		toolTipContent: "{label} - {y}%",
+		dataPoints: [
+			{ y: 100, label: "Candidates Applied" },
+			{ y: 63, label: "Aptitude Test" },
+			{ y: 35, label: "Technical Interview" },
+			{ y: 15, label: "HR Interview" },
+			{ y: 5, label: "Candidates Recruited" }
+		]
+	}]
+});
+funnelChart.render();
+
 }
     </script>
 			
