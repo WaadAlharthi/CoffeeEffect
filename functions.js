@@ -31,13 +31,17 @@ function getValues() {
   
   
   var datapoints = [
+        {x:startX, y: startY},
+        { x: 1500, y: 130 },
+        { x: 1600, y: 110 },
+        { x: 1700, y: 90 },
         { x: 1800, y: 70 },
         { x: 1900, y: 60},
 	      { x: 2000, y: 40},
 	      { x: 2100, y: 20},
 	      { x: 2200, y: 10},
 	      { x: 2300, y: 00}
-          ]
+          ];
 	//[{x:startX, y: startY}]
 	document.querySelector("#chartContainer").options.datapoints = datapoints;
 	
