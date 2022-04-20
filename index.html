@@ -88,7 +88,7 @@ window.onload = function () {
   document.querySelector("#result1").innerHTML =startX ;
 
     
-  var datapoint = [{x:(startX*100), y: startY},
+  datapoint = [{x:(startX*100), y: startY},
                {x:(bed*100), y: (startY/(bed-startX))}]
                
   
@@ -107,14 +107,13 @@ window.onload = function () {
 	fillOpacity: .8,
         xValueFormatString:" ##:##",
         yValueFormatString:"~#",
-        dataPoints: [{x:(startX*100), y: startY},
-               {x:(bed*100), y: (startY/(bed-startX))}]
+        dataPoints: datapoint
       }
       ]
     });
 
     chart.render();
-  }
+  
   
   
   
@@ -122,7 +121,7 @@ window.onload = function () {
 	document.querySelector(".second").src = 'ezgifcom-gif-maker3.gif';
 	document.querySelector(".third").src = 'ezgifcom-gif-maker4.gif';
  	document.querySelector(".forth").src = 'ezgifcom-gif-maker6.gif';
-  
+}
     </script>
 			
 	
