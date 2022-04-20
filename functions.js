@@ -30,8 +30,16 @@ function getValues() {
   document.querySelector("#result1").innerHTML =startX ;
   
   
-  var datapoints = [{x:startX, y: startY}]
-	document.querySelector("#chartContainer").options.data = datapoints;
+  var datapoints = [
+        { x: 1800, y: 70 },
+        { x: 1900, y: 60},
+	      { x: 2000, y: 40},
+	      { x: 2100, y: 20},
+	      { x: 2200, y: 10},
+	      { x: 2300, y: 00}
+          ]
+	//[{x:startX, y: startY}]
+	document.querySelector("#chartContainer").options.datapoints = datapoints;
 	
 	document.querySelector("#chartContainer").render();
 	
