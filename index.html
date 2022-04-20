@@ -65,11 +65,14 @@ window.onload = function () {
   // continure untill bedtime
   //  { x: bedtime , y: depends?} ]
   
-  med = med_time.substring(0, 2);
+  var med = med_time.substring(0, 2);
 	med = parseInt(med);
   
-  cof = cof_time.substring(0, 2);
+  var cof = cof_time.substring(0, 2);
 	cof = parseInt(cof);
+  
+  var bed = bed_time.substring(0, 2);
+	bed = parseInt(bed);
   
   quantity = parseInt(quantity);
   
@@ -83,7 +86,11 @@ window.onload = function () {
   } 
     
   document.querySelector("#result1").innerHTML =startX ;
-  
+
+    
+  var datapoint = [{x:(startX*100), y: startY},
+               {x:(bed*100), y: (startY/(bed-startX))},
+               
   
 		var chart = new CanvasJS.Chart("chartContainer",
     {
@@ -100,18 +107,7 @@ window.onload = function () {
 	fillOpacity: .7,
         xValueFormatString:" ##:##",
         yValueFormatString:"~#",
-        dataPoints: [
-        {x:startX, y: startY},
-        { x: 1500, y: 130 },
-        { x: 1600, y: 110 },
-        { x: 1700, y: 90 },
-        { x: 1800, y: 70 },
-        { x: 1900, y: 60},
-	      { x: 2000, y: 40},
-	      { x: 2100, y: 20},
-	      { x: 2200, y: 10},
-	      { x: 2300, y: 00}
-          ]
+        dataPoints: datapoint
       }
       ]
     });
