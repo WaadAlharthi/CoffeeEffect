@@ -89,7 +89,7 @@ window.onload = function () {
 
     
   var datapoint = [{x:(startX*100), y: startY},
-               {x:(bed*100), y: (startY/(bed-startX))]
+               {x:(bed*100), y: (startY/(bed-startX))}]
                
   
 		var chart = new CanvasJS.Chart("chartContainer",
@@ -104,7 +104,7 @@ window.onload = function () {
       {        
         type: "splineArea",
 	color: "rgba(215,130,55,.9)",
-	fillOpacity: .7,
+	fillOpacity: .8,
         xValueFormatString:" ##:##",
         yValueFormatString:"~#",
         dataPoints: datapoint
