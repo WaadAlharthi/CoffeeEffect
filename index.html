@@ -4,28 +4,28 @@
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 	</head>
-	<body>
+	<body onload="displayGraph()>
 		<h1> How much caffeine is too much for me? </h1>
 		
 		<form>
 			
 			<label> When did you drink your last coffee yesterday? </label>
 			<div>
-				<input type="time" value="14:00"  onmouseover="function()" onclick="function()" id="cof_time" name="cof_time">
+				<input type="time" value="14:00"  onmouseover="displayGraph()" onclick="displayGraph()" id="cof_time" name="cof_time">
 			</div>
 			<label>  With how many espresso shots?</label>
 			<div>
-				<input type="range" min="1" max="3" step="1" value="2" onmouseover="function()" onclick="function()" id="quantity" name="quantity">
+				<input type="range" min="1" max="3" step="1" value="2" onmouseover="displayGraph()" onclick="displayGraph()" id="quantity" name="quantity">
     			</div>
 			
 			<label> When did you consume medications containing caffeine? </label>
 			<div>
-				<input type="time" value=""  onmouseover="function()" onclick="function()" id="med_time" name="med_time">
+				<input type="time" value=""  onmouseover="displayGraph()" onclick="displayGraph()" id="med_time" name="med_time">
 			</div>
 			
 			<label> When did you intend to sleep? </label>
 			<div>
-				<input type="time" value="23:00"  onmouseover="function()" onclick="function()" id="bedtime" name="bedtime">
+				<input type="time" value="23:00"  onmouseover="displayGraph()" onclick="displayGraph()" id="bedtime" name="bedtime">
 			</div>
 			
   		</form>
@@ -53,7 +53,7 @@
 <script>
   
 
-window.onload = function () {
+function displayGraph() {
   var cof_time = document.querySelector("#cof_time").value;
   var quantity = document.querySelector("#quantity").value;
 	
