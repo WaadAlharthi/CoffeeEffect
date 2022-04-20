@@ -107,7 +107,8 @@ window.onload = function () {
 	fillOpacity: .8,
         xValueFormatString:" ##:##",
         yValueFormatString:"~#",
-        dataPoints: datapoint
+        dataPoints: [{x:(startX*100), y: startY},
+               {x:(bed*100), y: (startY/(bed-startX))}]
       }
       ]
     });
