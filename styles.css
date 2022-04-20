@@ -18,6 +18,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
+	margin-left: auto;
+    margin-right: auto
 	top:300px;
 	opacity: 0.8;
     }
@@ -26,6 +28,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
+	    margin-left: auto;
+    margin-right: auto
 	top:375px;
 	opacity: 0.8;
     }
@@ -34,6 +38,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
+	    margin-left: auto;
+    margin-right: auto
 	top:450px;
 	opacity: 0.8;
     }
@@ -43,14 +49,12 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
+	    margin-left: auto;
+    margin-right: auto
 	 top:525px;
 	opacity: 0.8;
     }
 
-#chartContainer{
-	text-align: center;
-	
-}
 
 ul, li{
 	padding: 60;
