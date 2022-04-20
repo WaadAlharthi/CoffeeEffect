@@ -52,7 +52,7 @@
 		  <div id="funnel" style="margin-left:auto;margin-right:auto;position:relative; top:500px; height: 500px; width: 600px;">
 	      </div>
 		
-		<div style="top:900px; height: 100px; width: 600px;">
+		<div style="bottom:20px; height: 50px; width: 600px;">
 			<p> caffeine measurements are estimated, each person process caffieine diffrently based on many factors such as </p>
 		</div>
 		
@@ -62,7 +62,7 @@
 
 function displayGraph() {
 	
-	  document.querySelector(".first").src = 'ezgifcom-gif-maker5.gif';
+	document.querySelector(".first").src = 'ezgifcom-gif-maker5.gif';
 	document.querySelector(".second").src = 'ezgifcom-gif-maker3.gif';
 	document.querySelector(".third").src = 'ezgifcom-gif-maker4.gif';
  	document.querySelector(".forth").src = 'ezgifcom-gif-maker6.gif';
@@ -140,9 +140,9 @@ function displayGraph() {
 	},
 	data: [{
 		type: "funnel",
-		indexLabel: "{label} [{y}%]",
+		indexLabel: "{label} [~{y} mg]",
 		neckHeight: 0,
-		toolTipContent: "{label} - {y}%",
+		toolTipContent: "{label} - ~ {y} mg",
 		dataPoints: [
 			{ y: 225, label: "Triple shot espresso" },
 			{ y: 150, label: "Double shot espresso" },
