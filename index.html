@@ -47,11 +47,12 @@
 		
 
 		<div style="position:relative;">
-		<div id="splineArea" style="position:relative; top:600px; height: 300px; width: 600px;">
+		  <div id="splineArea" style="position:relative; top:600px; height: 300px; width: 600px;">
 			</div></div>
 		
-		
-		<div id="funnel" style="height: 300px; width: 100%;"></div>
+		<div style="position:relative;">
+		  <div id="funnel" style="position:relative; top:600px; height: 300px; width: 100%;">
+      </div></div>
 		
 
 <script>
@@ -125,9 +126,11 @@ function displayGraph() {
     splineAreaChart.render();
   
   
-
-
-	
+//med (EXCEDRIN 2 tablets) (130)
+//tea (50) 70 90 120
+//espresso (80 150 225) 300
+	// orderd = [tea 50, soloShot 80, medicationTablet 130, doubleShot 150, tripleShot 225]
+  
 	var funnelChart = new CanvasJS.Chart("funnel", {
 	theme: "light2",
 	title:{
@@ -139,11 +142,11 @@ function displayGraph() {
 		neckHeight: 0,
 		toolTipContent: "{label} - {y}%",
 		dataPoints: [
-			{ y: 100, label: "Candidates Applied" },
-			{ y: 63, label: "Aptitude Test" },
-			{ y: 35, label: "Technical Interview" },
-			{ y: 15, label: "HR Interview" },
-			{ y: 5, label: "Candidates Recruited" }
+			{ y: 225, label: "Triple shot espresso" },
+			{ y: 150, label: "Double shot espresso" },
+			{ y: 130, label: "Two Medication Tablets" },
+			{ y: 80, label: "Solo shot espresso" },
+			{ y: 50, label: "Tea" }
 		]
 	}]
 });
