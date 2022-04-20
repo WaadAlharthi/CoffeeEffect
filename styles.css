@@ -18,8 +18,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	margin-left: auto;
-    margin-right: auto;
+	margin-left: 30%;
+    margin-right: 70%;
 	top:300px;
 	opacity: 0.8;
     }
@@ -28,8 +28,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	    margin-left: auto;
-    margin-right: auto;
+	    margin-left: 70%;
+    margin-right: 30%;
 	top:375px;
 	opacity: 0.8;
     }
@@ -38,8 +38,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	    margin-left: auto;
-    margin-right: auto;
+	    margin-left: 30%;
+    margin-right: 70%;
 	top:450px;
 	opacity: 0.8;
     }
@@ -49,8 +49,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	    margin-left: auto;
-    margin-right: auto;
+	    margin-left: 70%;
+    margin-right: 30%;
 	 top:525px;
 	opacity: 0.8;
     }
