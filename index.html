@@ -20,21 +20,21 @@
 			
 			<label> When did you consume medications containing caffeine? </label>
 			<div>
-				<input type="time" value=""  onmouseover="displayGraph()" onclick="displayGraph()" id="med_time" name="med_time">
+				<input type="time" value="" onmouseover="displayGraph()" onclick="displayGraph()" id="med_time" name="med_time">
 			</div>
 			
 			<label> When did you intend to sleep? </label>
 			<div>
-				<input type="time" value="23:00"  onmouseover="displayGraph()" onclick="displayGraph()" id="bedtime" name="bedtime">
+				<input type="time" value="23:00" onmouseover="displayGraph()" onclick="displayGraph()" id="bedtime" name="bedtime">
 			</div>
 			
   		</form>
 		
 		<p id="result1"> result </p>
 
-		<div position="relative" width="4" height="600" border="5px" solid= "black"> 
+		<div position="relative" width="4" height="400"> 
       			<svg width="2" height="600">
-				<line x1="0" y1="0" x2="0" y2="600" style="stroke:black;stroke-width:4" />      			
+				<line x1="0" y1="0" x2="0" y2="350" style="stroke:black;stroke-width:4" />      			
 
             <img class="first" object-fit="contain" src="ezgifcom-gif-maker3.gif">  
 	          <img class="second" object-fit="contain" src="ezgifcom-gif-maker4.gif">
@@ -47,7 +47,7 @@
 		
 
 		<div style="position:relative;">
-		  <div id="splineArea" style="position:relative; top:600px; height: 300px; width: 600px;">
+		  <div id="splineArea" style="position:relative; top:400px; height: 300px; width: 600px;">
 			</div></div>
 		
 		<div style="position:relative;">
@@ -101,7 +101,7 @@ function displayGraph() {
 
     var datapoints =  [{x:(startX*100), y: startY},
                {x:(bed*100), y: (startY/(bed-startX))}];
-               
+               //add labels
   
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
     {
