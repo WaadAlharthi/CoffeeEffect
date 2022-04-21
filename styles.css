@@ -18,7 +18,8 @@ form {
 
 #clock{
 	float: left;
-	width:300;}
+	width:300;
+    padding-top:30;}
 
 .first {
 	position: absolute;
@@ -53,10 +54,82 @@ form {
       width:150px;
       height:150px;
       fill:none;
-	margin-top: 120;
+	margin-top: 100;
 	margin-left: -230;;
 	opacity: 0.8;
     }
+
+
+     .fifth{
+         position: absolute;
+      width:150px;
+      height:150px;
+      fill:none;
+	margin-top: 100;
+	margin-left: -230;;
+	opacity: 0.8;
+}
+     .sixth{position: absolute;
+      width:150px;
+      height:150px;
+      fill:none;
+	margin-top: 100;
+	margin-left: -230;;
+	opacity: 0.8;
+}
+.seventh{
+position: absolute;
+      width:150px;
+      height:150px;
+      fill:none;
+	margin-top: 100;
+	margin-left: -230;;
+	opacity: 0.8;
+}
+.eighth{
+position: absolute;
+      width:150px;
+      height:150px;
+      fill:none;
+	margin-top: 100;
+	margin-left: -230;;
+	opacity: 0.8;
+}
+.ninth{
+position: absolute;
+      width:150px;
+      height:150px;
+      fill:none;
+	margin-top: 100;
+	margin-left: -230;;
+	opacity: 0.8;}
+.tenth{
+position: absolute;
+      width:150px;
+      height:150px;
+      fill:none;
+	margin-top: 100;
+	margin-left: -230;;
+	opacity: 0.8;
+}
+.eleventh{
+position: absolute;
+      width:150px;
+      height:150px;
+      fill:none;
+	margin-top: 100;
+	margin-left: -230;;
+	opacity: 0.8;
+} 
+.twelfth{
+position: absolute;
+      width:150px;
+      height:150px;
+      fill:none;
+	margin-top: 100;
+	margin-left: -230;;
+	opacity: 0.8;
+}
 
 
 ul, li{
