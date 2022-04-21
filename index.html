@@ -79,7 +79,7 @@
 	      </div>
 		
 		<div style="margin-left:auto;margin-right:auto;position:relative; top:250px; height: 50px;">
-			caffeine measurements are estimated, each person process caffieine diffrently based on many factors such as 
+			Caffeine measurements are estimated, each person process caffieine diffrently based on many factors such as the type of coffee beans, extraction method, a person weight, physical activities and mental state. 
 		</div>
 		
 
@@ -124,24 +124,59 @@ function displayGraph() {
     startX = med;
     startY = 200;
   } 
-  var resultStr = "";
 
-	if (bed>startX+6)
-	{
-		resultStr = "This level of caffiene may effect the quality of your sleep";
-	}
+	var medX = startX+6;
+	var medY = startY/2;
+	var endX = startX+10;
+	var endY = 0;
 	
-	  document.querySelector("#result1").innerHTML = resultStr ;
+	var resultStr = "";
 
 	var datapoints =  [
 		{x:(startX*100), y: startY, indexLabel: "Last Coffee"},
-		{x: ((startX+6)*100), y: (startY/2), indexLabel: "Half the caffeine lasts 5 hours"},
-		{x:(bed*100), y: (startY/(bed-startX))}
+		{x: (medX*100), y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
+		{x:endX, y: endY},
+		{x: (bed*100), y: 0}
 	];
+	
+	if(bed>endX)
+	{
+		resultStr = "This level of caffiene should not effect the quality of your sleep";
+		document.querySelector("#result1").innerHTML = resultStr ;
+	}
+		
+	
+	if (bed<medX)
+	{
+		resultStr = "This level of caffiene may effect the quality of your sleep";
+		document.querySelector("#result1").innerHTML = resultStr ;
+		
+		datapoints =  [
+			{x:(startX*100), y: startY, indexLabel: "Last Coffee"},
+			{x:(bed*100), y: (startY/(startX+bed))},
+			{x: (medX*100), y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
+			{x:endX, endY}
+			];
+	}
+	
+	if (bed<endX)
+	{
+		resultStr = "This level of caffiene may effect the quality of your sleep";
+		document.querySelector("#result1").innerHTML = resultStr ;
+		
+		datapoints =  [
+			{x:(startX*100), y: startY, indexLabel: "Last Coffee"},
+			{x: (medX*100), y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
+			{x:(bed*100), y: (startY/(startX+bed))},
+			{x:endX, endY}
+			];
+	}
+	
+	
   
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
     {
-        axisY:{
+        axisY:{  interval: 50,
             valueFormatString:"#"
         },
         axisX:{
