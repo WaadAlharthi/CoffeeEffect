@@ -15,7 +15,7 @@ form {
 	padding: 20;
 	width: 300;
 }
-label{padding-top:10;}
+label{margin-top:10;}
 
 #clock{
 	float: left;
