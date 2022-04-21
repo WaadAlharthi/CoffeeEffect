@@ -15,12 +15,11 @@ html, body {
     }
 .first {
 	position: absolute;
-      width:150px;
-      height:150px;
-      fill:none;
-	margin-left: 30%;
-    margin-right: 70%;
-	top:300px;
+      	width:150px;
+     	height:150px;
+      	fill:none;
+	margin-top: -20;
+	margin-left: 200;
 	opacity: 0.8;
     }
     .second {
@@ -28,9 +27,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	    margin-left: 70%;
-    margin-right: 30%;
-	top:375px;
+	margin-top: -20;
+	margin-left: 200;
 	opacity: 0.8;
     }
     .third {
@@ -38,9 +36,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	    margin-left: 30%;
-    margin-right: 70%;
-	top:450px;
+	margin-top: -20;
+	margin-left: 200;
 	opacity: 0.8;
     }
 
@@ -49,9 +46,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	    margin-left: 70%;
-    margin-right: 30%;
-	 top:525px;
+	margin-top: -20;
+	margin-left: 200;;
 	opacity: 0.8;
     }
 
