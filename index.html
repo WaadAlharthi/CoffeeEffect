@@ -85,7 +85,7 @@
 
 <script>
   
-function hideClockGifs(cof){
+function hideClockGifs(cof, med){
   document.querySelector(".first").src = 'HD_transparent_picture.png';
   document.querySelector(".second").src = 'HD_transparent_picture.png';
   document.querySelector(".third").src = 'HD_transparent_picture.png';
@@ -100,7 +100,7 @@ function hideClockGifs(cof){
   document.querySelector(".twelfth").src = 'HD_transparent_picture.png';
 
   
-  switch(cof) {
+  switch(cof | med) {
   case 1:
   case 13:
     document.querySelector(".first").src = 'ezgifcom-gif-maker3.gif';
@@ -177,7 +177,7 @@ function displayGraph() {
   
   quantity = parseInt(quantity);
 	
-  hideClockGifs(cof);
+  hideClockGifs(cof, med);
 
   
   var startX = cof;
