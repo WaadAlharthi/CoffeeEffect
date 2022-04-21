@@ -234,7 +234,11 @@ function displayGraph() {
   var startX = cof;
   var startY = 80*quantity;
 	
-  //if (med < cof) {startX = med; startY = 200; } 
+  if (med < cof) 
+  {
+	  startX = med; 
+	  startY = 200; 
+  } 
 
 	var medX = startX+6;
 	var medY = startY/2;
