@@ -155,7 +155,7 @@ function displayGraph() {
 			{x:(startX*100), y: startY, indexLabel: "Last Coffee"},
 			{x:(bed*100), y: (startY/(startX+bed))},
 			{x: (medX*100), y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
-			{x:endX, endY}
+			{x:endX, y:endY}
 			];
 	}
 	
@@ -168,10 +168,9 @@ function displayGraph() {
 			{x:(startX*100), y: startY, indexLabel: "Last Coffee"},
 			{x: (medX*100), y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
 			{x:(bed*100), y: (startY/(startX+bed))},
-			{x:endX, endY}
+			{x:endX, y:endY}
 			];
 	}
-	
 	
   
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
