@@ -5,7 +5,7 @@
 
 	</head>
 	<body onload="displayGraph()">
-		<h1> How much caffeine is too much for me? </h1>
+		<h1> Did the caffeine affect your sleep quality? </h1>
 		<div width="100%">
 		<form>
 			
@@ -15,10 +15,10 @@
 			</div>
 			<label>  With how many espresso shots?</label>
 			<div>
-				<input type="range" min="1" max="3" step="1" value="2" onmouseover="displayGraph()" onclick="displayGraph()" id="quantity" name="quantity">
+				<input type="range" min="1" max="4" step="1" value="2" onmouseover="displayGraph()" onclick="displayGraph()" id="quantity" name="quantity">
     			</div>
 			
-			<label> When did you consume medications containing caffeine? </label>
+			<label> When did you consume a medicine that contains caffeine? </label>
 			<div>
 				<input type="time" value="" onmouseover="displayGraph()" onclick="displayGraph()" id="med_time" name="med_time">
 			</div>
@@ -35,7 +35,7 @@
 		
 
     <div id="clock" position="relative" width="300"> 
-   <svg width="200" height="500"><circle padding-left="auto" padding-right="auto" class="clock" cx="100" cy="100" r="90" stroke="black" stroke-width="2" fill="none"></circle>
+   <svg width="200" height="500"><circle padding-left="auto" padding-right="auto" cx="100" cy="100" r="90" stroke="black" stroke-width="2" fill="none"></circle>
    
    <line class="hour12" fill="none" stroke="black" stroke-width="3" x1="100" y1="30" x2="100" y2="10"></line>
    <line class="hour3" fill="none" stroke="black" stroke-width="3" x1="170" y1="100" x2="190" y2="100"></line>
@@ -116,11 +116,20 @@ function displayGraph() {
     startX = med;
     startY = 200;
   } 
-    
-  document.querySelector("#result1").innerHTML =startX ;
+  var resultStr = "";
 
-    var datapoints =  [{x:(startX*100), y: startY},
-               {x:(bed*100), y: (startY/(bed-startX))}];
+	if (bed>startX+6)
+	{
+		resultStr = "This level of caffiene may effect the quality of your sleep";
+	}
+	
+	  document.querySelector("#result1").innerHTML = resultStr ;
+
+	var datapoints =  [
+		{x:(startX*100), y: startY},
+		{x: ((startX+6)*100), y: (startY/2)},
+		{x:(bed*100), y: (startY/(bed-startX))}
+	];
                //add labels
   
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
