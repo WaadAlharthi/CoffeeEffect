@@ -136,11 +136,10 @@ function displayGraph() {
 	  document.querySelector("#result1").innerHTML = resultStr ;
 
 	var datapoints =  [
-		{x:(startX*100), y: startY},
-		{x: ((startX+6)*100), y: (startY/2)},
+		{x:(startX*100), y: startY, indexLabel: "Last Coffee"},
+		{x: ((startX+6)*100), y: (startY/2), indexLabel: "Half the caffeine lasts 5 hours"},
 		{x:(bed*100), y: (startY/(bed-startX))}
 	];
-               //add labels
   
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
     {
