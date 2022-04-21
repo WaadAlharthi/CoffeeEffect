@@ -149,9 +149,16 @@ function displayGraph() {
 //tea (50) 70 90 120
 //espresso (80 150 225) 300
 	// orderd = [tea 50, soloShot 80, medicationTablet 130, doubleShot 150, tripleShot 225]
-  
+    CanvasJS.addColorSet("customColors",
+                [
+                "#472D30",
+                "#A47762",
+    			      "#5F7B62",
+                "#cd9777",
+    			      "#76C893"
+                ]);
 	var funnelChart = new CanvasJS.Chart("funnel", {
-	theme: "light2",
+	colorSet: "customColors",
 	title:{
 		text: "Company Recruitment Process"
 	},
