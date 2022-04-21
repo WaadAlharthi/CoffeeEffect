@@ -19,7 +19,7 @@ html, body {
      	height:150px;
       	fill:none;
 	margin-top: -20;
-	margin-left: 200;
+	margin-left: 100;
 	opacity: 0.8;
     }
     .second {
@@ -46,8 +46,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	margin-top: -20;
-	margin-left: 200;;
+	margin-top: -100;
+	margin-left: -230;;
 	opacity: 0.8;
     }
 
