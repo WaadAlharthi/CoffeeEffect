@@ -249,10 +249,10 @@ function displayGraph() {
 	var resultStr = "";
 
 	var datapoints =  [
-		{x:(startX*100), y: startY, indexLabel: "Last Coffee"},
-		{x: (medX*100), y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
-		{x:endX, y: endY},
-		{x: (bed*100), y: 0}
+		{x:startX, y: startY, indexLabel: "Last Coffee"},
+		{x: medX, y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
+		{x: endX, y: endY},
+		{x: bed, y: 0}
 	];
 	
 	if(bed>endX)
@@ -268,9 +268,9 @@ function displayGraph() {
 		document.querySelector("#result1").innerHTML = resultStr ;
 		
 		datapoints =  [
-			{x:(startX*100), y: startY, indexLabel: "Last Coffee"},
-			{x:(bed*100), y: (startY/(startX+bed))},
-			{x: (medX*100), y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
+			{x:startX, y: startY, indexLabel: "Last Coffee"},
+			{x:bed, y: (startY/(startX+bed))},
+			{x: medX, y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
 			{x:endX, y:endY}
 			];
 	}
@@ -281,9 +281,9 @@ function displayGraph() {
 		document.querySelector("#result1").innerHTML = resultStr ;
 		
 		datapoints =  [
-			{x:(startX*100), y: startY, indexLabel: "Last Coffee"},
-			{x: (medX*100), y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
-			{x:(bed*100), y: (startY/(startX+bed))},
+			{x:startX, y: startY, indexLabel: "Last Coffee"},
+			{x: medX, y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
+			{x:bed, y: (startY/(startX+bed))},
 			{x:endX, y:endY}
 			];
 	}
@@ -295,14 +295,14 @@ function displayGraph() {
             valueFormatString:"#"
         },
         axisX:{
-           valueFormatString:"##:##"
+           valueFormatString:"##:00"
         },
       data: [
       {        
         type: "splineArea",
 	color: "rgba(215,130,55,.9)",
 	fillOpacity: .8,
-        xValueFormatString:" ##:##",
+        xValueFormatString:" ##:00",
         yValueFormatString:"~#",
         dataPoints: datapoints
       }
