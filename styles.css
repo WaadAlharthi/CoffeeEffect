@@ -27,8 +27,8 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	margin-top: -80;
-	margin-left: -100;
+	margin-top: -50;
+	margin-left: -200;
 	opacity: 0.8;
     }
     .third {
@@ -37,7 +37,7 @@ html, body {
       height:150px;
       fill:none;
 	margin-top: -80;
-	margin-left: -230;
+	margin-left: -120;
 	opacity: 0.8;
     }
 
@@ -46,7 +46,7 @@ html, body {
       width:150px;
       height:150px;
       fill:none;
-	margin-top: 100;
+	margin-top: 120;
 	margin-left: -230;;
 	opacity: 0.8;
     }
