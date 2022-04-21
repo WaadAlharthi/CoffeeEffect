@@ -55,18 +55,18 @@
     
 	    </svg>
       			
-	    <img class="first" object-fit="contain" >  
-	    <img class="second" object-fit="contain" >			     			
-      <img class="third" object-fit="contain">
-      <img class="forth" object-fit="contain">
-      <img class="fifth" object-fit="contain" >
-      <img class="sixth" object-fit="contain" src="">  
-      <img class="seventh" object-fit="contain" src="">
-      <img class="eighth" object-fit="contain" src="">  
-      <img class="ninth" object-fit="contain" src=""> 
-      <img class="tenth" object-fit="contain" src="">  
-      <img class="eleventh" object-fit="contain" src=""> 
-      <img class="twelfth" object-fit="contain" src="">  
+	    <img class="first" object-fit="contain" src="HD_transparent_picture.png">  
+	    <img class="second" object-fit="contain" src="HD_transparent_picture.png">			     			
+      <img class="third" object-fit="contain" src="HD_transparent_picture.png">
+      <img class="forth" object-fit="contain" src="HD_transparent_picture.png">
+      <img class="fifth" object-fit="contain" src="HD_transparent_picture.png" >
+      <img class="sixth" object-fit="contain" src="HD_transparent_picture.png">  
+      <img class="seventh" object-fit="contain" src="HD_transparent_picture.png">
+      <img class="eighth" object-fit="contain" src="HD_transparent_picture.png">  
+      <img class="ninth" object-fit="contain" src="HD_transparent_picture.png"> 
+      <img class="tenth" object-fit="contain" src="HD_transparent_picture.png">  
+      <img class="eleventh" object-fit="contain" src="HD_transparent_picture.png"> 
+      <img class="twelfth" object-fit="contain" src="HD_transparent_picture.png">  
 	
 			
 		</div>
@@ -85,34 +85,22 @@
 
 <script>
   
+hideClockGifs(cof){
+  document.querySelector(".first").src = 'HD_transparent_picture.png';
+  document.querySelector(".second").src = 'HD_transparent_picture.png';
+  document.querySelector(".third").src = 'HD_transparent_picture.png';
+  document.querySelector(".forth").src = 'HD_transparent_picture.png';
+  document.querySelector(".fifth").src = 'HD_transparent_picture.png';
+  document.querySelector(".sixth").src = 'HD_transparent_picture.png';
+  document.querySelector(".seventh").src = 'HD_transparent_picture.png';
+  document.querySelector(".eighth").src = 'HD_transparent_picture.png';
+  document.querySelector(".ninth").src = 'HD_transparent_picture.png';
+  document.querySelector(".tenth").src = 'HD_transparent_picture.png';
+  document.querySelector(".eleventh").src = 'HD_transparent_picture.png';
+  document.querySelector(".twelfth").src = 'HD_transparent_picture.png';
 
-function displayGraph() {
-	
-
-	
-  var cof_time = document.querySelector("#cof_time").value;
-  var quantity = document.querySelector("#quantity").value;
-	
-	var med_time = document.querySelector("#med_time").value;
-	var bedtime = document.querySelector("#bedtime").value;
-
-  //[ { x: min value of cof_time or med_time , y: quantity * 200 or medication dose },
-  //  { x: prev x+100, y: prev y-? },
-  // continure untill bedtime
-  //  { x: bedtime , y: depends?} ]
   
-  var med = med_time.substring(0, 2);
-	med = parseInt(med);
-  
-  var cof = cof_time.substring(0, 2);
-	cof = parseInt(cof);
-  
-  var bed = bedtime.substring(0, 2);
-	bed = parseInt(bed);
-  
-  quantity = parseInt(quantity);
-	
-switch(cof) {
+  switch(cof) {
   case 1:
   case 13:
     document.querySelector(".first").src = 'ezgifcom-gif-maker3.gif';
@@ -162,6 +150,36 @@ switch(cof) {
     document.querySelector(".twelfth").src = 'ezgifcom-gif-maker3.gif';
 	  break;
 }
+
+}
+  
+function displayGraph() {
+	
+
+	
+  var cof_time = document.querySelector("#cof_time").value;
+  var quantity = document.querySelector("#quantity").value;
+	
+	var med_time = document.querySelector("#med_time").value;
+	var bedtime = document.querySelector("#bedtime").value;
+
+  //[ { x: min value of cof_time or med_time , y: quantity * 200 or medication dose },
+  //  { x: prev x+100, y: prev y-? },
+  // continure untill bedtime
+  //  { x: bedtime , y: depends?} ]
+  
+  var med = med_time.substring(0, 2);
+	med = parseInt(med);
+  
+  var cof = cof_time.substring(0, 2);
+	cof = parseInt(cof);
+  
+  var bed = bedtime.substring(0, 2);
+	bed = parseInt(bed);
+  
+  quantity = parseInt(quantity);
+	
+  hideClockGifs(cof);
 
   
   var startX = cof;
