@@ -11,9 +11,14 @@ html, body {
 
 form { 
 	text-align: left;
+	float:left;
 	padding: 20;
-	width: 200;
+	width: 300;
 }
+
+#clock{
+	float: left;
+	width:300}
 
 .first {
 	position: absolute;
