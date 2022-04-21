@@ -85,7 +85,7 @@
 
 <script>
   
-hideClockGifs(cof){
+function hideClockGifs(cof){
   document.querySelector(".first").src = 'HD_transparent_picture.png';
   document.querySelector(".second").src = 'HD_transparent_picture.png';
   document.querySelector(".third").src = 'HD_transparent_picture.png';
@@ -154,8 +154,6 @@ hideClockGifs(cof){
 }
   
 function displayGraph() {
-	
-
 	
   var cof_time = document.querySelector("#cof_time").value;
   var quantity = document.querySelector("#quantity").value;
