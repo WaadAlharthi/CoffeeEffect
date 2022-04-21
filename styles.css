@@ -26,8 +26,8 @@ form {
       	width:150px;
      	height:150px;
       	fill:none;
-	margin-top: -20;
-	margin-left: -100;
+	margin-top: -50;
+	margin-left: -140;
 	opacity: 0.8;
     }
     .second {
@@ -35,8 +35,8 @@ form {
       width:150px;
       height:150px;
       fill:none;
-	margin-top: -50;
-	margin-left: -200;
+	margin-top: -20;
+	margin-left: -100;
 	opacity: 0.8;
     }
     .third {
@@ -44,8 +44,8 @@ form {
       width:150px;
       height:150px;
       fill:none;
-	margin-top: -20;
-	margin-left: -120;
+	margin-top: 0;
+	margin-left: -90;
 	opacity: 0.8;
     }
 
@@ -54,8 +54,8 @@ form {
       width:150px;
       height:150px;
       fill:none;
-	margin-top: 100;
-	margin-left: -230;;
+	margin-top: 60;
+	margin-left: -100;;
 	opacity: 0.8;
     }
 
@@ -66,7 +66,7 @@ form {
       height:150px;
       fill:none;
 	margin-top: 100;
-	margin-left: -230;;
+	margin-left: -130;;
 	opacity: 0.8;
 }
      .sixth{position: absolute;
@@ -74,7 +74,7 @@ form {
       height:150px;
       fill:none;
 	margin-top: 100;
-	margin-left: -230;;
+	margin-left: -190;;
 	opacity: 0.8;
 }
 .seventh{
@@ -91,8 +91,8 @@ position: absolute;
       width:150px;
       height:150px;
       fill:none;
-	margin-top: 100;
-	margin-left: -230;;
+	margin-top: 70;
+	margin-left: -250;;
 	opacity: 0.8;
 }
 .ninth{
@@ -100,16 +100,16 @@ position: absolute;
       width:150px;
       height:150px;
       fill:none;
-	margin-top: 100;
-	margin-left: -230;;
+	margin-top: 10;
+	margin-left: -260;;
 	opacity: 0.8;}
 .tenth{
 position: absolute;
       width:150px;
       height:150px;
       fill:none;
-	margin-top: 100;
-	margin-left: -230;;
+	margin-top: -10;
+	margin-left: -250;;
 	opacity: 0.8;
 }
 .eleventh{
@@ -117,8 +117,8 @@ position: absolute;
       width:150px;
       height:150px;
       fill:none;
-	margin-top: 100;
-	margin-left: -230;;
+	margin-top: -30;
+	margin-left: -220;;
 	opacity: 0.8;
 } 
 .twelfth{
@@ -126,8 +126,8 @@ position: absolute;
       width:150px;
       height:150px;
       fill:none;
-	margin-top: 100;
-	margin-left: -230;;
+	margin-top: -50;
+	margin-left: -200;;
 	opacity: 0.8;
 }
 
