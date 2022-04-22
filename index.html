@@ -33,7 +33,7 @@
   		</form>
 		
     <div id="clock" position="relative" width="300"> 
-   <svg width="200" height="500"><circle padding-left="auto" padding-right="auto" cx="100" cy="100" r="90" stroke="black" stroke-width="2" fill="none"></circle>
+   <svg width="200" height="350"><circle padding-left="auto" padding-right="auto" cx="100" cy="100" r="90" stroke="black" stroke-width="2" fill="none"></circle>
    
    <line class="hour12" fill="none" stroke="black" stroke-width="3" x1="100" y1="30" x2="100" y2="10"></line>
    <line class="hour3" fill="none" stroke="black" stroke-width="3" x1="170" y1="100" x2="190" y2="100"></line>
@@ -225,7 +225,7 @@ function displayGraph() {
   
   var startX = cof;
   var startY = 80*quantity;
-var endX;
+  var endX;
 	var endY = 0;
   
   var bedX = bed;
@@ -233,7 +233,9 @@ var endX;
   var secondX;// if med selected
   var secondY;// if med selected
   var lowX= secondX-1; // if med selected
-  var lowY = ((startY/10)*(10-(lowX -startX))); // if med selected
+  var lowY = 0;
+	if ((secondX-startX)>10 ) {lowY = 0;} 
+  else { ((startY/10)*(10-(lowX -startX)));}
 	
 	var resultStr = "Too much caffiene may affect the quality of your sleep";
   var startLabel = "";
@@ -308,7 +310,8 @@ var endX;
       secondLabel = "Last Coffee";
     }
 	lowX= secondX-1;
-	lowY = ((startY/10)*(10-(lowX -startX)));
+	if ((secondX-startX)>10 ) {lowY = 0;} 
+  else { ((startY/10)*(10-(lowX -startX)));}
     
     if (bed> secondX+10)
     {
