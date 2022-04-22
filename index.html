@@ -243,16 +243,22 @@ function displayGraph() {
 
 	var medX = startX+6;
 	var medY = startY/2;
-	var endX = startX+10;
+	var endX;
 	var endY = 0;
+  
+  var bedX = bed;
+  var bedY = (startY/10)*(bedX-startX);
+  var secondX;// if med selected
+  var secondY;// if med selected
 	
 	var resultStr = "";
+  var startLabel = "";
+  var secondLabel = "";
 
 	var datapoints =  [
 		{x:startX, y: startY, indexLabel: "Last Coffee"},
 		{x: medX, y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
-		{x: endX, y: endY},
-		{x: bed, y: 0}
+		{x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"}
 	];
 	
 	if(bed>endX)
@@ -262,47 +268,100 @@ function displayGraph() {
 	}
 		
 	
-	if (bed<medX)
-	{
-		resultStr = "This level of caffiene may effect the quality of your sleep";
-		document.querySelector("#result1").innerHTML = resultStr ;
-		
-		datapoints =  [
-			{x:startX, y: startY, indexLabel: "Last Coffee"},
-			{x:bed, y: (startY/(startX+bed))},
-			{x: medX, y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
-			{x:endX, y:endY}
-			];
-	}
-	
-	if (bed<endX)
-	{
-		resultStr = "This level of caffiene may effect the quality of your sleep";
-		document.querySelector("#result1").innerHTML = resultStr ;
-		
-		datapoints =  [
-			{x:startX, y: startY, indexLabel: "Last Coffee"},
-			{x: medX, y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
-			{x:bed, y: (startY/(startX+bed))},
-			{x:endX, y:endY}
-			];
-	}
-	
+  if (med == 0) // no med selected?
+  { 
+    startX = cof;
+    startY = 80*quantity;
+    if (bed> startX+10)
+    {
+      endX = startX+10;
+      endY= 0;
+      bedX= bed;
+      bedY= 0; //add label
+      datapoints =  [
+		    {x:startX, y: startY, indexLabel: "Last Coffee"},
+		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+        {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"}
+	    ];
+    }
+    if (bed<= startX+10)
+    {
+      bedX= bed;
+      bedY= (startY/10)*(bedX-startX); //add label
+      endX = startX+10;
+      endY= 0;
+    }
+      datapoints =  [
+		    {x:startX, y: startY, indexLabel: "Last Coffee"},
+        {x: bedX, y: bedY, indexLabel: "This level of caffeine may affect your sleep quality!"},
+        {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+	    ];
+  }
   
+  if (med == 0) // if med is selected
+  { 
+    if(med>cof)
+    {
+      startX = cof;
+      startY = 80*quantity;
+      startLabel = "Last Coffee";
+      secondX = med;
+      secondY = ((startY/10)*(secondX -startX))+130;
+      secondLabel = "Medicine containing caffeine";
+    }
+    
+    if(med<=cof)
+    {
+      startX = med;
+      startY = 130;
+      startLabel = "Medicine containing caffeine";
+      secondX = cof;
+      secondY = ((startY/10)*(secondX -startX))+(80*quantity); 
+      secondLabel = "Last Coffee";
+    }
+    
+    if (bed> secondX+10)
+    {
+      endX = secondX+10;
+      endY= 0;
+      bedX= bed;
+      bedY= 0;
+      datapoints =  [
+		    {x: startX, y: startY, indexLabel: startLabel},
+        {x: secondX, y: secondY, indexLabel: secondLabel},
+		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+        {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"}
+	    ];
+    }
+    if (bed<= startX+10)
+    {
+      bedX= bed;
+      bedY= (secondY/10)*(bedX-secondX); 
+      endX = secondX+10;
+      endY= 0;
+    }
+      datapoints =  [
+		    {x: startX, y: startY, indexLabel: startLabel},
+        {x: secondX, y: secondY, indexLabel: secondLabel},
+		    {x: bedX, y: bedY, indexLabel: "This level of caffeine may affect your sleep quality!"},
+        {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+	    ];
+  }
+
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
     {
         axisY:{  interval: 50,
             valueFormatString:"#"
         },
         axisX:{
-           valueFormatString:"##:00"
+           valueFormatString:"##:01"
         },
       data: [
       {        
         type: "splineArea",
 	color: "rgba(215,130,55,.9)",
 	fillOpacity: .8,
-        xValueFormatString:" ##:00",
+        xValueFormatString:" ##:01",
         yValueFormatString:"~#",
         dataPoints: datapoints
       }
