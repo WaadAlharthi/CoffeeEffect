@@ -256,7 +256,7 @@ var endX;
 	if(bed>endX)
 	{
 		resultStr = "This level of caffiene should not effect the quality of your sleep";
-		document.querySelector("#result1").innerHTML = resultStr ;
+		document.querySelector("#result1").innerHTML = resultStr + " 1";
 	}
 		
 	
@@ -275,6 +275,7 @@ var endX;
 		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
         {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"}
 	    ];
+	    document.querySelector("#result1").innerHTML = resultStr + " 2";
     	}
     if (bed<= startX+10)
     {
@@ -288,6 +289,7 @@ var endX;
         {x: bedX, y: bedY, indexLabel: "This level of caffeine may affect your sleep quality!"},
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
 	    ];
+	  document.querySelector("#result1").innerHTML = resultStr + " 3";
   }
   
   if (med > 0) // if med is selected
@@ -324,6 +326,7 @@ var endX;
 		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
         {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"}
 	    ];
+	    document.querySelector("#result1").innerHTML = resultStr + " 4";
     }
     if (bed<= startX+10)
     {
@@ -338,6 +341,7 @@ var endX;
 		    {x: bedX, y: bedY, indexLabel: "This level of caffeine may affect your sleep quality!"},
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
 	    ];
+	  document.querySelector("#result1").innerHTML = resultStr + " 5";
   }
 
 	
