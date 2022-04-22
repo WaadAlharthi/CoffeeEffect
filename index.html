@@ -240,8 +240,11 @@ var endX;
   
   var bedX = bed;
   var bedY = (startY/10)*(10-(bedX-startX));
+
   var secondX;// if med selected
   var secondY;// if med selected
+  var lowX= secondX-1; // if med selected
+  var lowY = ((startY/10)*(10-(lowX -startX))); // if med selected
 	
 	var resultStr = "Too much caffiene may affect the quality of your sleep";
   var startLabel = "";
@@ -315,7 +318,10 @@ var endX;
       secondX = cof;
       secondY = ((startY/10)*(10-(secondX -startX)))+(80*quantity); 
       secondLabel = "Last Coffee";
+
     }
+	lowX= secondX-1;
+	lowY = ((startY/10)*(10-(lowX -startX)));
     
     if (bed> secondX+10)
     {
@@ -325,6 +331,7 @@ var endX;
       bedY= 0;
       datapoints =  [
 		    {x: startX, y: startY, indexLabel: startLabel},
+	      {x: lowX, y: lowY, indexLabel: startLabel},	      
         {x: secondX, y: secondY, indexLabel: secondLabel},
 		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
         {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
@@ -341,6 +348,7 @@ var endX;
     
       datapoints =  [
 		    {x: startX, y: startY, indexLabel: startLabel},
+	      {x: lowX, y: lowY, indexLabel: startLabel},
         {x: secondX, y: secondY, indexLabel: secondLabel},
 		    {x: bedX, y: bedY, indexLabel: "This level of caffeine may affect your sleep quality!"},
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
