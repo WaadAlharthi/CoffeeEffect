@@ -21,7 +21,7 @@
 			
 			<label> When did you consume a medicine that contains caffeine? </label>
 			<div>
-				<input type="time" value="" onmouseover="displayGraph()" onclick="displayGraph()" id="med_time" name="med_time">
+				<input type="time"  value="00:00" onmouseover="displayGraph()" onclick="displayGraph()" id="med_time" name="med_time">
 			</div>
 			
 			<label> When did you intend to sleep? </label>
@@ -235,7 +235,6 @@ function displayGraph() {
   var startX = cof;
   var startY = 80*quantity;
 
-	\
 var endX;
 	var endY = 0;
   
@@ -250,7 +249,7 @@ var endX;
 
 	var datapoints =  [
 		{x:startX, y: startY, indexLabel: "Last Coffee"},
-		{x: medX, y: medY, indexLabel: "Half the caffeine lasts 5 hours"},
+		{x: startX+5 , y: startY/2, indexLabel: "Half the caffeine lasts 5 hours"},
 		{x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"}
 	];
 	
@@ -276,7 +275,7 @@ var endX;
 		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
         {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"}
 	    ];
-    }
+    	}
     if (bed<= startX+10)
     {
       bedX= bed;
@@ -291,7 +290,7 @@ var endX;
 	    ];
   }
   
-  if (med == 0) // if med is selected
+  if (med > 0) // if med is selected
   { 
     if(med>cof)
     {
