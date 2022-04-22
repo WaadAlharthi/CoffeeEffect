@@ -279,7 +279,7 @@ var endX;
 	    ];
 	    document.querySelector("#result1").innerHTML = resultStr + " 2";
     	}
-    if (bed<= startX+10)
+    else if (bed<= startX+10)
     {
       bedX= bed;
       bedY= (startY/10)*(10-(bedX-startX)); //add label
@@ -295,7 +295,7 @@ var endX;
     }
   }
   
-  if (med > 0) // if med is selected
+  else if (med > 0) // if med is selected
   { 
     if(med>cof)
     {
@@ -303,17 +303,17 @@ var endX;
       startY = 80*quantity;
       startLabel = "Last Coffee";
       secondX = med;
-      secondY = ((startY/10)*(secondX -startX))+130;
+      secondY = ((startY/10)*(10-(secondX -startX)))+130;
       secondLabel = "Medicine containing caffeine";
     }
     
-    if(med<=cof)
+    else if(med<=cof)
     {
       startX = med;
       startY = 130;
       startLabel = "Medicine containing caffeine";
       secondX = cof;
-      secondY = ((startY/10)*(secondX -startX))+(80*quantity); 
+      secondY = ((startY/10)*(10-(secondX -startX)))+(80*quantity); 
       secondLabel = "Last Coffee";
     }
     
@@ -332,7 +332,7 @@ var endX;
 	    ];
 	    document.querySelector("#result1").innerHTML = resultStr + " 4";
     }
-    if (bed<= startX+10)
+    else if (bed<= secondX+10)
     {
       bedX= bed;
       bedY= (secondY/10)*(10-(bedX-secondX)); 
