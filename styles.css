@@ -10,12 +10,19 @@ html, body {
 }
 
 form { 
-	text-align: left;
-	float:left;
-	padding: 30;
-	width: 40%;
+	  text-align: left;
+    float: left;
+    margin: 50;
+    margin-right: 10;
+    padding-left: 30;
+    width: 40%;
+  
 }
-label{margin-top:10;}
+
+input{    
+  margin-bottom: 10;
+  margin-top: 5;
+}
 
 #clock{
 	float: left;
