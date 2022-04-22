@@ -232,10 +232,13 @@ function displayGraph() {
   var bedY = (startY/10)*(10-(bedX-startX));
   var secondX;// if med selected
   var secondY;// if med selected
-  var lowX= secondX-1; // if med selected
+  var lowX= startX+10; // if med selected
   var lowY = 0;
-	if ((secondX-startX)>10 ) {lowY = 0;} 
-  else { ((startY/10)*(10-(lowX -startX)));}
+	if ((secondX-startX)<10 ) 
+  {
+    lowX= secondX-1;
+    lowY = ((startY/10)*(10-(lowX -startX)));
+  } 	
 	
 	var resultStr = "Too much caffiene may affect the quality of your sleep";
   var startLabel = "";
@@ -309,9 +312,15 @@ function displayGraph() {
       secondY = ((startY/10)*(10-(secondX -startX)))+(80*quantity); 
       secondLabel = "Last Coffee";
     }
-	lowX= secondX-1;
-	if ((secondX-startX)>10 ) {lowY = 0;} 
-  else { ((startY/10)*(10-(lowX -startX)));}
+    
+    
+    lowX= startX+10;
+    lowY = 0;
+	if ((secondX-startX)<10 ) 
+  {
+    lowX= secondX-1;
+    lowY = ((startY/10)*(10-(lowX -startX)));
+  } 
     
     if (bed> secondX+10)
     {
