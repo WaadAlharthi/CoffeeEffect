@@ -283,13 +283,13 @@ var endX;
       bedY= (startY/10)*(10-(bedX-startX)); //add label
       endX = startX+10;
       endY= 0;
-    }
       datapoints =  [
 		    {x:startX, y: startY, indexLabel: "Last Coffee"},
         {x: bedX, y: bedY, indexLabel: "This level of caffeine may affect your sleep quality!"},
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
 	    ];
 	  document.querySelector("#result1").innerHTML = resultStr + " 3";
+    }
   }
   
   if (med > 0) // if med is selected
@@ -334,7 +334,7 @@ var endX;
       bedY= (secondY/10)*(10-(bedX-secondX)); 
       endX = secondX+10;
       endY= 0;
-    }
+    
       datapoints =  [
 		    {x: startX, y: startY, indexLabel: startLabel},
         {x: secondX, y: secondY, indexLabel: secondLabel},
@@ -342,6 +342,7 @@ var endX;
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
 	    ];
 	  document.querySelector("#result1").innerHTML = resultStr + " 5";
+    }
   }
 
 	
