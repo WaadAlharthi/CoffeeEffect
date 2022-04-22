@@ -246,7 +246,10 @@ var endX;
   var secondX;// if med selected
   var secondY;// if med selected
   var lowX= secondX-1; // if med selected
-  var lowY = ((startY/10)*(10-(lowX -startX))); // if med selected
+  var lowY = 0;
+	if (secondX-startX)>10 
+    {lowY = 0;} 
+  else { ((startY/10)*(10-(lowX -startX)));} // if med selected
 	
 	var resultStr = "Too much caffiene may affect the quality of your sleep";
   var startLabel = "";
