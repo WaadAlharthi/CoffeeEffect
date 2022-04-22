@@ -250,7 +250,8 @@ var endX;
 	var datapoints =  [
 		{x:startX, y: startY, indexLabel: "Last Coffee"},
 		{x: startX+5 , y: startY/2, indexLabel: "Half the caffeine lasts 5 hours"},
-		{x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"}
+		{x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+		{x: endX+4}
 	];
 	
 	if(bed>endX)
@@ -273,7 +274,8 @@ var endX;
       datapoints =  [
 		    {x:startX, y: startY, indexLabel: "Last Coffee"},
 		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
-        {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"}
+        {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
+	      {x: bedX+4}
 	    ];
 	    document.querySelector("#result1").innerHTML = resultStr + " 2";
     	}
@@ -287,6 +289,7 @@ var endX;
 		    {x:startX, y: startY, indexLabel: "Last Coffee"},
         {x: bedX, y: bedY, indexLabel: "This level of caffeine may affect your sleep quality!"},
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+	      {x: endX+4}
 	    ];
 	  document.querySelector("#result1").innerHTML = resultStr + " 3";
     }
@@ -324,7 +327,8 @@ var endX;
 		    {x: startX, y: startY, indexLabel: startLabel},
         {x: secondX, y: secondY, indexLabel: secondLabel},
 		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
-        {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"}
+        {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
+	      {x: bedX+4}
 	    ];
 	    document.querySelector("#result1").innerHTML = resultStr + " 4";
     }
@@ -340,6 +344,7 @@ var endX;
         {x: secondX, y: secondY, indexLabel: secondLabel},
 		    {x: bedX, y: bedY, indexLabel: "This level of caffeine may affect your sleep quality!"},
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+	      {x: endX+4}
 	    ];
 	  document.querySelector("#result1").innerHTML = resultStr + " 5";
     }
@@ -349,7 +354,7 @@ var endX;
 	
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
     {
-        axisY:{  interval: 50,
+        axisY:{  interval: 20,
             valueFormatString:"#"
         },
         axisX:{
