@@ -2,7 +2,6 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="https://waadalharthi.github.io/CoffeeEffect/styles.css">
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
 	</head>
 	<body onload="displayGraph()">
 		<h1> Did the caffeine affect your sleep quality? </h1>
@@ -30,19 +29,16 @@
 			</div>
 					
 			<p id="result1"> Too much caffiene may affect the quality of sleep </p>
-
 			
   		</form>
 		
-
     <div id="clock" position="relative" width="300"> 
-   <svg width="200" height="300"><circle padding-left="auto" padding-right="auto" cx="100" cy="100" r="90" stroke="black" stroke-width="2" fill="none"></circle>
+   <svg width="200" height="500"><circle padding-left="auto" padding-right="auto" cx="100" cy="100" r="90" stroke="black" stroke-width="2" fill="none"></circle>
    
    <line class="hour12" fill="none" stroke="black" stroke-width="3" x1="100" y1="30" x2="100" y2="10"></line>
    <line class="hour3" fill="none" stroke="black" stroke-width="3" x1="170" y1="100" x2="190" y2="100"></line>
    <line class="hour6" fill="none" stroke="black" stroke-width="3" x1="100" y1="170" x2="100" y2="190"></line>
    <line class="hour9" fill="none" stroke="black" stroke-width="3" x1="10" y1="100" x2="30" y2="100"></line>
-
    <line class="hour1" fill="none" stroke="black" stroke-width="1" x1="142" y1="35" x2="149" y2="25"></line>
    <line class="hour2" fill="none" stroke="black" stroke-width="1" x1="170" y1="65" x2="180" y2="60"></line>
    
@@ -72,7 +68,6 @@
 			
 		</div>
 		</div>
-
 		  <div id="splineArea" style="clear:both;margin-left:auto;margin-right:auto;position:relative; top:20px; height: 300px; width: 600px;">
 		</div>
 		
@@ -83,7 +78,6 @@
 			*Caffeine measurements are estimated, each person process caffieine diffrently based on many factors such as the type of coffee beans, extraction method, a person weight, physical activities and mental state. 
 		</div>
 		
-
 <script>
   
 function hideClockGifs(cof, med, bed){
@@ -100,7 +94,6 @@ function hideClockGifs(cof, med, bed){
   document.querySelector(".tenth").src = 'HD_transparent_picture.png';
   document.querySelector(".eleventh").src = 'HD_transparent_picture.png';
   document.querySelector(".twelfth").src = 'HD_transparent_picture.png';
-
   
   switch(cof) {
   case 1:
@@ -203,8 +196,6 @@ switch(med) {
     document.querySelector(".twelfth").src = 'ezgifcom-gif-maker6.gif';
 	  break;
 }
-
-
 }
   
 function displayGraph() {
@@ -214,7 +205,6 @@ function displayGraph() {
 	
 	var med_time = document.querySelector("#med_time").value;
 	var bedtime = document.querySelector("#bedtime").value;
-
   //[ { x: min value of cof_time or med_time , y: quantity * 200 or medication dose },
   //  { x: prev x+100, y: prev y-? },
   // continure untill bedtime
@@ -232,29 +222,22 @@ function displayGraph() {
   quantity = parseInt(quantity);
 	
   hideClockGifs(cof, med, bed);
-
   
   var startX = cof;
   var startY = 80*quantity;
-
 var endX;
 	var endY = 0;
   
   var bedX = bed;
   var bedY = (startY/10)*(10-(bedX-startX));
-
   var secondX;// if med selected
   var secondY;// if med selected
   var lowX= secondX-1; // if med selected
-  var lowY = 0;
-	if (secondX-startX)>10 
-    {lowY = 0;} 
-  else { ((startY/10)*(10-(lowX -startX)));} // if med selected
+  var lowY = ((startY/10)*(10-(lowX -startX))); // if med selected
 	
 	var resultStr = "Too much caffiene may affect the quality of your sleep";
   var startLabel = "";
   var secondLabel = "";
-
 	var datapoints =  [
 		{x:startX, y: startY, indexLabel: "Last Coffee"},
 		{x: startX+5 , y: startY/2, indexLabel: "Half the caffeine lasts 5 hours"},
@@ -323,7 +306,6 @@ var endX;
       secondX = cof;
       secondY = ((startY/10)*(10-(secondX -startX)))+(80*quantity); 
       secondLabel = "Last Coffee";
-
     }
 	lowX= secondX-1;
 	lowY = ((startY/10)*(10-(lowX -startX)));
@@ -362,12 +344,10 @@ var endX;
 	  document.querySelector("#result1").innerHTML = "This level of caffeine may affect your sleep quality!";
     }
   }
-
 	
 	
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
     {
-
         axisY:{  interval: 40,
             valueFormatString:"#"
         },
@@ -384,7 +364,6 @@ var endX;
       }
       ]
     });
-
     splineAreaChart.render();
   
   
@@ -421,7 +400,6 @@ var endX;
 	}]
 });
 funnelChart.render();
-
 }
     </script>
 			
