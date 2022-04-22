@@ -239,7 +239,7 @@ var endX;
 	var endY = 0;
   
   var bedX = bed;
-  var bedY = (startY/10)*(bedX-startX);
+  var bedY = (startY/10)*(10-(bedX-startX));
   var secondX;// if med selected
   var secondY;// if med selected
 	
@@ -280,7 +280,7 @@ var endX;
     if (bed<= startX+10)
     {
       bedX= bed;
-      bedY= (startY/10)*(bedX-startX); //add label
+      bedY= (startY/10)*(10-(bedX-startX)); //add label
       endX = startX+10;
       endY= 0;
     }
@@ -331,7 +331,7 @@ var endX;
     if (bed<= startX+10)
     {
       bedX= bed;
-      bedY= (secondY/10)*(bedX-secondX); 
+      bedY= (secondY/10)*(10-(bedX-secondX)); 
       endX = secondX+10;
       endY= 0;
     }
