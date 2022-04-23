@@ -423,7 +423,9 @@ function displayGraph() {
       endY= 0;
       bedX= bed;
       bedY= 0;
-      datapoints =  [
+      if ((secondX-startX)<10)
+      {
+        datapoints =  [
 		    {x: startX, y: startY, indexLabel: startLabel},
 	      {x: lowX, y: lowY},	      
         {x: secondX, y: secondY, indexLabel: secondLabel},
@@ -431,6 +433,20 @@ function displayGraph() {
         {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
 	      {x: bedX+4}
 	    ];
+      }
+      else // gap
+      {
+        datapoints =  [
+		    {x: startX, y: startY, indexLabel: startLabel},
+	      {x: lowX, y: lowY},
+        {x: secondX-1, y:0},
+        {x: secondX, y: secondY, indexLabel: secondLabel},
+		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+        {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
+	      {x: bedX+4}
+	    ];
+      }
+      
 	    document.querySelector("#result1").innerHTML = "3 This level of caffeine should not affect your sleep quality";
     }
     else if (bed<= secondX+10)
@@ -439,7 +455,8 @@ function displayGraph() {
       bedY= (secondY/10)*(10-(bedX-secondX)); 
       endX = secondX+10;
       endY= 0;
-    
+    if ((secondX-startX)<10)
+      {
       datapoints =  [
 		    {x: startX, y: startY, indexLabel: startLabel},
 	      {x: lowX, y: lowY},
@@ -448,6 +465,19 @@ function displayGraph() {
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
 	      {x: endX+4}
 	    ];
+      }
+      else // gap
+      {
+        datapoints =  [
+		    {x: startX, y: startY, indexLabel: startLabel},
+	      {x: lowX, y: lowY},
+        {x: secondX-1, y:0},
+        {x: secondX, y: secondY, indexLabel: secondLabel},
+		    {x: bedX, y: bedY, color: "red", indexLabel: "This level of caffeine may affect your sleep quality!"},
+        {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+	      {x: bedX+4}
+	    ];
+      }
 	  document.querySelector("#result1").innerHTML = "4 This level of caffeine may affect your sleep quality!";
     }
     
@@ -469,7 +499,7 @@ function displayGraph() {
         valueFormatString:"##"
         },
 		title:{
-		backgroundColor: "#fff8e6"
+		backgroundColor: "#fffae6"
 	},
       data: [
       {        
@@ -501,7 +531,6 @@ function displayGraph() {
 	var funnelChart = new CanvasJS.Chart("funnel", {
 	colorSet: "customColors",
 	title:{
-		backgroundColor: "#fff8e6",
 		text: "caffeine levels "
 	},	  
 	data: [
