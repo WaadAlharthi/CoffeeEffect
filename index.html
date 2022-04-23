@@ -361,6 +361,9 @@ function displayGraph() {
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
     {
 		exportEnabled: true,
+    zoomEnabled: true, 
+    animationEnabled: true,
+    animationDuration: 3000,
         axisY:{  interval: 40,
             valueFormatString:"#"
         },
