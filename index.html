@@ -348,7 +348,7 @@ function displayGraph() {
 		{x:startX, y: startY, indexLabel: "Last Coffee"},
 		{x: startX+5 , y: startY/2, indexLabel: "Half the caffeine lasts 5 hours"},
 		{x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
-		{x: endX+4}
+		{x: endX+3}
 	];
 	
 	if(bed>endX)
@@ -372,7 +372,7 @@ function displayGraph() {
 		    {x:startX, y: startY, indexLabel: "Last Coffee"},
 		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
         {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
-	      {x: bedX+4}
+	      {x: bedX+3}
 	    ];
 	    document.querySelector("#result1").innerHTML = "This level of caffeine should not affect your sleep quality";
     	}
@@ -386,7 +386,7 @@ function displayGraph() {
 		    {x:startX, y: startY, indexLabel: "Last Coffee"},
         {x: bedX, y: bedY, color: "red", indexLabel: "This level of caffeine may affect your sleep quality!"},
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
-	      {x: endX+4}
+	      {x: endX+3}
 	    ];
 	  document.querySelector("#result1").innerHTML = "This level of caffeine may affect your sleep quality!";
     }
@@ -437,7 +437,7 @@ function displayGraph() {
         {x: secondX, y: secondY, indexLabel: secondLabel},
 		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
         {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
-	      {x: bedX+4}
+	      {x: bedX+3}
 	    ];
       }
       else // gap
@@ -449,7 +449,7 @@ function displayGraph() {
         {x: secondX, y: secondY, indexLabel: secondLabel},
 		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
         {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
-	      {x: bedX+4}
+	      {x: bedX+3}
 	    ];
       }
       
@@ -469,7 +469,7 @@ function displayGraph() {
         {x: secondX, y: secondY, indexLabel: secondLabel},
 		    {x: bedX, y: bedY, color: "red", indexLabel: "This level of caffeine may affect your sleep quality!"},
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
-	      {x: endX+4}
+	      {x: endX+3}
 	    ];
       }
       else // gap
@@ -481,7 +481,7 @@ function displayGraph() {
         {x: secondX, y: secondY, indexLabel: secondLabel},
 		    {x: bedX, y: bedY, color: "red", indexLabel: "This level of caffeine may affect your sleep quality!"},
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
-	      {x: bedX+4}
+	      {x: bedX+3}
 	    ];
       }
 	  document.querySelector("#result1").innerHTML = "This level of caffeine may affect your sleep quality!";
@@ -505,9 +505,9 @@ function displayGraph() {
     axisX:{	
       stripLines:[
 			{                
-				startValue:(bed-1),
-				endValue:(bed+1),                
-				color:"#d8d8d8"                      
+				startValue:(bed-0.5),
+				endValue:(bed+0.5),                
+				color:"#fff3c4"                      
 			}
 			],
       interval: 1,
@@ -520,7 +520,7 @@ function displayGraph() {
       data: [
       {        
         type: "splineArea",
-	      color: "rgba(215,130,55,.6)",
+	      color: "rgba(215,130,55,.7)",
 	      fillOpacity: .8,
         yValueFormatString:"~#",
         highlightEnabled: true,        
