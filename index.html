@@ -81,9 +81,20 @@
 		
 <script>
 	
-function analogClock(){
-	
-		
+function analogClock(bed){
+// redraw the red line as a normal black thin line
+	//const clockSVG = document.querySelector("svg");
+  //let newLine = document.createElementNS("http://www.w3.org/2000/svg", "line");	
+  //newLine.setAttribute("stroke", "black");
+  //newLine.setAttribute("stroke-width", "1");
+  //newLine.setAttribute("fill", "#none");
+  
+  //newLine.setAttribute("x1", "142");
+  //newLine.setAttribute("y1", "35");
+  //newLine.setAttribute("x2", "149");
+  //newLine.setAttribute("y2", "25");
+  
+  //clockSVG.appendChild(newLine);	
 }
   
 function hideClockGifs(cof, med, bed){
@@ -202,6 +213,8 @@ switch(med) {
     document.querySelector(".twelfth").src = 'ezgifcom-gif-maker6.gif';
 	  break;
 }
+  
+ analogClock(bed);
 const clockSVG = document.querySelector("svg");
 let newLine = document.createElementNS("http://www.w3.org/2000/svg", "line");	
 newLine.setAttribute("stroke", "red");
