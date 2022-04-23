@@ -196,6 +196,101 @@ switch(med) {
     document.querySelector(".twelfth").src = 'ezgifcom-gif-maker6.gif';
 	  break;
 }
+const clockSVG = document.querySelector("svg");
+let newLine = document.createElementNS("http://www.w3.org/2000/svg", "line");	
+newLine.setAttribute("stroke", "red");
+newLine.setAttribute("stroke-width", "8");
+newLine.setAttribute("fill", "#none");
+	
+switch(bed) {
+  case 1:
+  case 13:
+    newLine.setAttribute("x1", "142");
+    newLine.setAttribute("y1", "35");
+    newLine.setAttribute("x2", "149");
+    newLine.setAttribute("y2", "25");
+	  break;
+  case 2:
+  case 14:
+    newLine.setAttribute("x1", "170");
+    newLine.setAttribute("y1", "65");
+    newLine.setAttribute("x2", "180");
+    newLine.setAttribute("y2", "60");
+	  break;
+  case 3:
+  case 15:
+    newLine.setAttribute("x1", "170");
+    newLine.setAttribute("y1", "100");
+    newLine.setAttribute("x2", "190");
+    newLine.setAttribute("y2", "100");
+	  break;
+  case 4:
+  case 16:
+    newLine.setAttribute("x1", "178");
+    newLine.setAttribute("y1", "145");
+    newLine.setAttribute("x2", "168");
+    newLine.setAttribute("y2", "138");
+	  break;
+  case 5:
+  case 17:
+    newLine.setAttribute("x1", "149");
+    newLine.setAttribute("y1", "175");
+    newLine.setAttribute("x2", "142");
+    newLine.setAttribute("y2", "165");
+	  break;
+  case 6:
+  case 18:
+    newLine.setAttribute("x1", "100");
+    newLine.setAttribute("y1", "170");
+    newLine.setAttribute("x2", "100");
+    newLine.setAttribute("y2", "190");
+	  break;
+  case 7:
+  case 19:
+    newLine.setAttribute("x1", "22");
+    newLine.setAttribute("y1", "145");
+    newLine.setAttribute("x2", "32");
+    newLine.setAttribute("y2", "138");
+	  break;
+  case 8:
+  case 20:
+    newLine.setAttribute("x1", "50");
+    newLine.setAttribute("y1", "175");
+    newLine.setAttribute("x2", "57");
+    newLine.setAttribute("y2", "165");
+	  break;
+  case 9:
+  case 21:
+    newLine.setAttribute("x1", "10");
+    newLine.setAttribute("y1", "100");
+    newLine.setAttribute("x2", "30");
+    newLine.setAttribute("y2", "100");
+	  break;
+  case 10:
+  case 22:
+    newLine.setAttribute("x1", "30");
+    newLine.setAttribute("y1", "65");
+    newLine.setAttribute("x2", "20");
+    newLine.setAttribute("y2", "60");
+	  break;
+  case 11:
+  case 23:
+    newLine.setAttribute("x1", "57");
+    newLine.setAttribute("y1", "35");
+    newLine.setAttribute("x2", "50");
+    newLine.setAttribute("y2", "25");
+	  break;
+  case 12:
+  case 24:
+    newLine.setAttribute("x1", "100");
+	  newLine.setAttribute("y1", "30");
+    newLine.setAttribute("x2", "100");
+    newLine.setAttribute("y2", "10");
+	  break;
+}
+	
+clockSVG.appendChild(newLine);
+
 }
   
 function displayGraph() {
