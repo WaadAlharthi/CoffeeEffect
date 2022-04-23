@@ -320,6 +320,10 @@ function displayGraph() {
   var bed = bedtime.substring(0, 2);
 	bed = parseInt(bed);
   
+  if (bed_time < cof )
+  {	bed = bed+24;} 
+
+  
   quantity = parseInt(quantity);
 	
   hideClockGifs(cof, med, bed);
