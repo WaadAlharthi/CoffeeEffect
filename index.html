@@ -504,17 +504,12 @@ function displayGraph() {
     },
     axisX:{	
       stripLines:[
-			{                
-				startValue:(bed-0.5),
-				endValue:(bed+0.5),                
-				color:"#fffcf0"                      
-			},
-      {                
-				startValue:(24),
-				endValue:(endX+3),                
-				color:"#fff3c4"                      
-			}
-			],
+	      {
+		startValue:(24),
+		endValue:(endX+1),                
+		color:"#fffcf0"                      
+		}
+	],
       interval: 1,
       title: "Hours (over 24 is the next day)",
       valueFormatString:"##"
