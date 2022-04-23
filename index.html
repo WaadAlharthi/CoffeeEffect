@@ -360,9 +360,7 @@ function displayGraph() {
 	
 	
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
-   { 255, 252, 245
-    backgroundColor: "#fff8e6",
-		exportEnabled: true,
+   { exportEnabled: true,
     zoomEnabled: true, 
     animationEnabled: true,
     animationDuration: 2000,
@@ -374,6 +372,9 @@ function displayGraph() {
 	       title: "Hours (over 24 is the next day)",
            valueFormatString:"##"
         },
+		title:{
+		backgroundColor: "#fff8e6"
+	},
       data: [
       {        
         type: "splineArea",
@@ -402,10 +403,10 @@ function displayGraph() {
   
 	var funnelChart = new CanvasJS.Chart("funnel", {
 	colorSet: "customColors",
-    backgroundColor: "#fff8e6",
 	title:{
+		backgroundColor: "#fff8e6",
 		text: "caffeine levels "
-	},
+	},	  
 	data: [{
 		type: "funnel",
 		indexLabel: "{label} [~{y} mg]",
