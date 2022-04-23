@@ -273,7 +273,7 @@ function displayGraph() {
         {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
 	      {x: bedX+4}
 	    ];
-	    document.querySelector("#result1").innerHTML = "This level of caffeine should not affect your sleep quality";
+	    document.querySelector("#result1").innerHTML = "1 This level of caffeine should not affect your sleep quality";
     	}
     else if (bed<= startX+10)
     {
@@ -287,7 +287,7 @@ function displayGraph() {
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
 	      {x: endX+4}
 	    ];
-	  document.querySelector("#result1").innerHTML = "This level of caffeine may affect your sleep quality!";
+	  document.querySelector("#result1").innerHTML = "2 This level of caffeine may affect your sleep quality!";
     }
   }
   
@@ -316,11 +316,11 @@ function displayGraph() {
     
     lowX= startX+10;
     lowY = 0;
-	if ((secondX-startX)<10 ) 
-  {
-    lowX= secondX-1;
-    lowY = ((startY/10)*(10-(lowX -startX)));
-  } 
+	  if ((secondX-startX)<10 ) 
+    {
+      lowX= secondX-1;
+      lowY = ((startY/10)*(10-(lowX -startX)));
+    } 
     
     if (bed> secondX+10)
     {
@@ -336,7 +336,7 @@ function displayGraph() {
         {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
 	      {x: bedX+4}
 	    ];
-	    document.querySelector("#result1").innerHTML = "This level of caffeine should not affect your sleep quality";
+	    document.querySelector("#result1").innerHTML = "3 This level of caffeine should not affect your sleep quality";
     }
     else if (bed<= secondX+10)
     {
@@ -353,8 +353,9 @@ function displayGraph() {
         {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
 	      {x: endX+4}
 	    ];
-	  document.querySelector("#result1").innerHTML = "This level of caffeine may affect your sleep quality!";
+	  document.querySelector("#result1").innerHTML = "4 This level of caffeine may affect your sleep quality!";
     }
+    
   }
 	
 	
