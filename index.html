@@ -360,17 +360,18 @@ function displayGraph() {
 	
 	
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
-   { exportEnabled: true,
+   { 
+    exportEnabled: true,
     zoomEnabled: true, 
     animationEnabled: true,
     animationDuration: 2000,
-        axisY:{  interval: 40,
+    axisY:{  interval: 40,
 	       title: "Approximate caffeine level",
-            valueFormatString:"#"
+         valueFormatString:"#"
         },
         axisX:{	interval: 1,
-	       title: "Hours (over 24 is the next day)",
-           valueFormatString:"##"
+	      title: "Hours (over 24 is the next day)",
+        valueFormatString:"##"
         },
 		title:{
 		backgroundColor: "#fff8e6"
@@ -378,9 +379,10 @@ function displayGraph() {
       data: [
       {        
         type: "splineArea",
-	color: "rgba(215,130,55,.6)",
-	fillOpacity: .8,
+	      color: "rgba(215,130,55,.6)",
+	      fillOpacity: .8,
         yValueFormatString:"~#",
+        highlightEnabled: true,        
         dataPoints: datapoints
       }
       ]
@@ -407,19 +409,20 @@ function displayGraph() {
 		backgroundColor: "#fff8e6",
 		text: "caffeine levels "
 	},	  
-	data: [{
-		type: "funnel",
-		indexLabel: "{label} [~{y} mg]",
-		neckHeight: 0,
-		toolTipContent: "{label} - ~{y} mg",
-		dataPoints: [
-			{ y: 225, label: "Triple shot espresso" },
-			{ y: 150, label: "Double shot espresso" },
-			{ y: 130, label: "Two Medication Tablets" },
-			{ y: 80, label: "Solo shot espresso" },
-			{ y: 50, label: "Tea" }
-		]
-	}]
+	data: [
+    {
+		  type: "funnel",
+		  indexLabel: "{label} [~{y} mg]",
+		  neckHeight: 0,
+		  toolTipContent: "{label} - ~{y} mg",
+		  dataPoints: [
+			  { y: 225, label: "Triple shot espresso" },
+			  { y: 150, label: "Double shot espresso" },
+			  { y: 130, label: "Two Medication Tablets" },
+			  { y: 80, label: "Solo shot espresso" },
+			  { y: 50, label: "Tea" }
+		  ]
+	  }]
 });
 funnelChart.render();
 }
