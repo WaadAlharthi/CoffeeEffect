@@ -116,7 +116,6 @@ function analogClock(){
   newLine.setAttribute("fill", "#none");
   clockSVG.appendChild(newLine);
 
-
   let newLine = document.createElementNS(svgns, "line");
   newLine.setAttribute("x1", "178");
   newLine.setAttribute("y1", "145");
@@ -126,7 +125,6 @@ function analogClock(){
   newLine.setAttribute("stroke-width", "1");
   newLine.setAttribute("fill", "#none");
   clockSVG.appendChild(newLine);
-  
   
   let newLine = document.createElementNS(svgns, "line");
   newLine.setAttribute("x1", "149");
@@ -138,7 +136,6 @@ function analogClock(){
   newLine.setAttribute("fill", "#none");
   clockSVG.appendChild(newLine);
   
-  
   let newLine = document.createElementNS(svgns, "line");
   newLine.setAttribute("x1", "100");
   newLine.setAttribute("y1", "170");
@@ -148,7 +145,6 @@ function analogClock(){
   newLine.setAttribute("stroke-width", "1");
   newLine.setAttribute("fill", "#none");
   clockSVG.appendChild(newLine);
-  
 
   let newLine = document.createElementNS(svgns, "line");
   newLine.setAttribute("x1", "22");
@@ -171,7 +167,6 @@ function analogClock(){
   newLine.setAttribute("fill", "#none");
   clockSVG.appendChild(newLine);
   
-  
   let newLine = document.createElementNS(svgns, "line");
   newLine.setAttribute("x1", "10");
   newLine.setAttribute("y1", "100");
@@ -181,7 +176,6 @@ function analogClock(){
   newLine.setAttribute("stroke-width", "1");
   newLine.setAttribute("fill", "#none");
   clockSVG.appendChild(newLine);
-  
   
   let newLine = document.createElementNS(svgns, "line");
   newLine.setAttribute("x1", "30");
@@ -193,7 +187,6 @@ function analogClock(){
   newLine.setAttribute("fill", "#none");
   clockSVG.appendChild(newLine);
   
-  
   let newLine = document.createElementNS(svgns, "line");
   newLine.setAttribute("x1", "57");
   newLine.setAttribute("y1", "35");
@@ -203,7 +196,6 @@ function analogClock(){
   newLine.setAttribute("stroke-width", "1");
   newLine.setAttribute("fill", "#none");
   clockSVG.appendChild(newLine);
-  
   
   let newLine = document.createElementNS(svgns, "line");
   newLine.setAttribute("x1", "100");
@@ -218,6 +210,7 @@ function analogClock(){
 }
   
 function hideClockGifs(cof, med, bed){
+   analogClock();
   
   document.querySelector(".first").src = 'HD_transparent_picture.png';
   document.querySelector(".second").src = 'HD_transparent_picture.png';
@@ -333,8 +326,6 @@ switch(med) {
     document.querySelector(".twelfth").src = 'ezgifcom-gif-maker6.gif';
 	  break;
 }
-  
- analogClock();
   
 const clockSVG = document.querySelector("svg");
 let newLine = document.createElementNS("http://www.w3.org/2000/svg", "line");	
