@@ -175,6 +175,78 @@ position: absolute;
     margin-left: -170;
 	opacity: 0.8;
 }
+.hour17{
+position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -235;
+	opacity: 0.8;
+}
+.hour18{
+position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -205;
+	opacity: 0.8;
+}
+.hour19{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -325;
+    margin-left: -170;
+	opacity: 0.8;
+}
+.hour20{
+position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -235;
+	opacity: 0.8;
+}
+.hour21{
+position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -205;
+	opacity: 0.8;
+}
+.hour22{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -325;
+    margin-left: -170;
+	opacity: 0.8;
+}
+.hour23{
+position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -205;
+	opacity: 0.8;
+}
+.hour24{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -325;
+    margin-left: -170;
+	opacity: 0.8;
+}
 
 
 
