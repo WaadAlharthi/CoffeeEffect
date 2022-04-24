@@ -32,25 +32,68 @@
 			
   		</form>
 		
-    <div id="clock" position="relative" width="300"> 
-   <svg width="200" height="350"><circle padding-left="auto" padding-right="auto" cx="100" cy="100" r="90" stroke="black" stroke-width="2" fill="none"></circle>
+    <div id="clock" position="relative" width="400"> 
    
-   <line class="hour12" fill="none" stroke="black" stroke-width="3" x1="100" y1="30" x2="100" y2="10"></line>
-   <line class="hour3" fill="none" stroke="black" stroke-width="3" x1="170" y1="100" x2="190" y2="100"></line>
-   <line class="hour6" fill="none" stroke="black" stroke-width="3" x1="100" y1="170" x2="100" y2="190"></line>
-   <line class="hour9" fill="none" stroke="black" stroke-width="3" x1="10" y1="100" x2="30" y2="100"></line>
-   <line class="hour1" fill="none" stroke="black" stroke-width="1" x1="142" y1="35" x2="149" y2="25"></line>
-   <line class="hour2" fill="none" stroke="black" stroke-width="1" x1="170" y1="65" x2="180" y2="60"></line>
-   
-    <line class="hour4" fill="none" stroke="black" stroke-width="1" x1="178" y1="145" x2="168" y2="138"></line>
-   <line class="hour5" fill="none" stroke="black" stroke-width="1" x1="149" y1="175" x2="142" y2="165"></line>
-	 <line class="hour7" fill="none" stroke="black" stroke-width="1" x1="22" y1="145" x2="32" y2="138"></line>
-   <line class="hour8" fill="none" stroke="black" stroke-width="1" x1="50" y1="175" x2="57" y2="165"></line>
-   
-    <line class="hour11" fill="none" stroke="black" stroke-width="1" x1="57" y1="35" x2="50" y2="25"></line>
-   <line class="hour10" fill="none" stroke="black" stroke-width="1" x1="30" y1="65" x2="20" y2="60"></line>
+ <svg width="400" height="500"><circle class="clock" cx="150" cy="150" r="120" stroke="black" stroke-width="2" fill="none"></circle>
     
-</svg>
+Sorry, your browser does not support inline SVG.
+
+<g stroke="black" stroke-width="3" stroke-linecap="round">
+   <line  x1="30" y1="150" x2="50" y2="150" transform="rotate(0  100 100)" />
+   <line x1="30" y1="150" x2="50" y2="150" transform="rotate(180  150 150)" />
+   <line x1="30" y1="150" x2="50" y2="150" transform="rotate(90   150 150)" />
+   <line x1="30" y1="150" x2="50" y2="150" transform="rotate(-90  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(45   150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(-45  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(135  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(-135 150 150)" />
+ </g>
+   <g stroke="black" stroke-width="1" stroke-linecap="round">
+   <line x1="30" y1="150" x2="40" y2="150"  transform="rotate(75  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150"  transform="rotate(-75 150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150"  transform="rotate(105  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150"  transform="rotate(-105 150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(15  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(-15 150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(165  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150"  transform="rotate(-165 150 150)" />  
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(30  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(-30 150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(150  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(-150 150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(60  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(-60 150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(120  150 150)" />
+   <line x1="30" y1="150" x2="40" y2="150" transform="rotate(-120 150 150)" />
+  </g>
+  <g>
+  <text x="180" y="23" class="small">1</text>
+  <text x="210" y="36" class="small">2</text>
+  <text x="240" y="60" class="small">3</text>
+  <text x="260" y="88" class="small">4</text>
+  <text x="275" y="121" class="small">5</text>
+  <text x="279" y="154" class="small">6</text>
+  <text x="275" y="187" class="small">7</text>
+  <text x="260" y="220" class="small">8</text>
+  <text x="240" y="248" class="small">9</text>
+  <text x="210" y="272" class="small">10</text>
+  <text x="180" y="285" class="small">11</text>
+  <text x="140" y="288" class="small">12</text>
+  <text x="105" y="285" class="small">13</text>
+  <text x="75" y="272" class="small">14</text>
+  <text x="45" y="248" class="small">15</text>
+  <text x="25" y="220" class="small">16</text>
+  <text x="10" y="187" class="small">17</text>
+  <text x="6" y="154" class="small">18</text>
+  <text x="10" y="121" class="small">19</text>
+  <text x="25" y="88" class="small">20</text>
+  <text x="45" y="60" class="small">21</text>
+  <text x="75" y="36" class="small">22</text>
+  <text x="105" y="23" class="small">23</text>
+  <text x="140" y="20" class="small">24</text>
+  </g> 
+  
+</svg> 
       			
 
 	    <img class="first" object-fit="contain" src="HD_transparent_picture.png">  
@@ -83,7 +126,7 @@
 	
 function analogClock(){
 // redraw the red line as a normal black thin line
-	const clockSVG = document.querySelector("svg");
+const clockSVG = document.querySelector("svg");
   const svgns = "http://www.w3.org/2000/svg";
   
   let newLine1 = document.createElementNS(svgns, "line");
