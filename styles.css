@@ -29,115 +29,153 @@ input{
 	width:300;
     padding-top:30;}
 
-.first {
+.hour1 {
 	position: absolute;
-      	width:150px;
-     	height:150px;
+  width: 300;
+    height: 300px;
       	fill:none;
-	margin-top: -50;
-	margin-left: -140;
+	margin-top: -490;
+    margin-left: -135;
 	opacity: 0.8;
     }
-    .second {
+    .hour2 {
 	    position: absolute;
-      width:150px;
-      height:150px;
-      fill:none;
-	margin-top: -20;
-	margin-left: -100;
+    width: 300;
+    height: 300px;
+    fill: none;
+    margin-top: -470;
+    margin-left: -120;
 	opacity: 0.8;
     }
-    .third {
+    .hour3 {
 	    position: absolute;
-      width:150px;
-      height:150px;
+      width: 300px;
+    height: 300px;
       fill:none;
-	margin-top: 0;
-	margin-left: -90;
+	margin-top: -450;
+    margin-left: -100;
 	opacity: 0.8;
     }
 
-    .forth {
+    .hour4 {
       position: absolute;
-      width:150px;
-      height:150px;
+      width: 300px;
+    height: 300px;
       fill:none;
-	margin-top: 60;
-	margin-left: -100;;
+	margin-top: -420;
+    margin-left: -90;
 	opacity: 0.8;
     }
 
 
-     .fifth{
+     .hour5{
          position: absolute;
-      width:150px;
-      height:150px;
+      width: 300px;
+    height: 300px;
       fill:none;
-	margin-top: 100;
-	margin-left: -130;;
+	margin-top: -390;
+    margin-left: -100;
 	opacity: 0.8;
 }
-     .sixth{position: absolute;
-      width:150px;
-      height:150px;
-      fill:none;
-	margin-top: 100;
-	margin-left: -190;;
+     .hour6{position: absolute;
+         width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -360;
+    margin-left: -110;
 	opacity: 0.8;
 }
-.seventh{
+.hour7{
 position: absolute;
-      width:150px;
-      height:150px;
-      fill:none;
-	margin-top: 100;
-	margin-left: -230;;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -338;
+    margin-left: -135;
 	opacity: 0.8;
 }
-.eighth{
-position: absolute;
-      width:150px;
-      height:150px;
-      fill:none;
-	margin-top: 70;
-	margin-left: -250;;
+.hour8{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -325;
+    margin-left: -170;
 	opacity: 0.8;
 }
-.ninth{
+.hour9{
 position: absolute;
-      width:150px;
-      height:150px;
-      fill:none;
-	margin-top: 10;
-	margin-left: -260;;
-	opacity: 0.8;}
-.tenth{
-position: absolute;
-      width:150px;
-      height:150px;
-      fill:none;
-	margin-top: -10;
-	margin-left: -250;;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -205;
 	opacity: 0.8;
 }
-.eleventh{
+.hour10{
 position: absolute;
-      width:150px;
-      height:150px;
-      fill:none;
-	margin-top: -30;
-	margin-left: -220;;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -235;
+	opacity: 0.8;
+}
+.hour11{
+position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -270;
 	opacity: 0.8;
 } 
-.twelfth{
-position: absolute;
-      width:150px;
-      height:150px;
-      fill:none;
-	margin-top: -50;
-	margin-left: -200;;
+.hour12{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -355;
+    margin-left: -300;
 	opacity: 0.8;
 }
+.hour13{
+position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -270;
+	opacity: 0.8;
+} 
+.hour14{
+position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -235;
+	opacity: 0.8;
+}
+.hour15{
+position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -320;
+    margin-left: -205;
+	opacity: 0.8;
+}
+.hour16{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    fill: none;
+    margin-top: -325;
+    margin-left: -170;
+	opacity: 0.8;
+}
+
 
 
 ul, li{
