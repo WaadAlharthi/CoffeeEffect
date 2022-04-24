@@ -34,8 +34,8 @@ input{
   width: 300;
     height: 300px;
       	fill:none;
-	margin-top: -490;
-    margin-left: -135;
+	margin-top: -500;
+    margin-left: -55;
 	opacity: 0.8;
     }
     .hour2 {
@@ -44,7 +44,7 @@ input{
     height: 300px;
     fill: none;
     margin-top: -470;
-    margin-left: -120;
+    margin-left: -40;
 	opacity: 0.8;
     }
     .hour3 {
@@ -53,7 +53,7 @@ input{
     height: 300px;
       fill:none;
 	margin-top: -450;
-    margin-left: -100;
+    margin-left: -20;
 	opacity: 0.8;
     }
 
@@ -63,7 +63,7 @@ input{
     height: 300px;
       fill:none;
 	margin-top: -420;
-    margin-left: -90;
+    margin-left: -15;
 	opacity: 0.8;
     }
 
@@ -74,7 +74,7 @@ input{
     height: 300px;
       fill:none;
 	margin-top: -390;
-    margin-left: -100;
+    margin-left: -15;
 	opacity: 0.8;
 }
      .hour6{position: absolute;
@@ -82,7 +82,7 @@ input{
     height: 300px;
     fill: none;
     margin-top: -360;
-    margin-left: -110;
+    margin-left: -30;
 	opacity: 0.8;
 }
 .hour7{
@@ -91,7 +91,7 @@ position: absolute;
     height: 300px;
     fill: none;
     margin-top: -338;
-    margin-left: -135;
+    margin-left: -60;
 	opacity: 0.8;
 }
 .hour8{
@@ -100,7 +100,7 @@ position: absolute;
     height: 300px;
     fill: none;
     margin-top: -325;
-    margin-left: -170;
+    margin-left: -90;
 	opacity: 0.8;
 }
 .hour9{
@@ -109,7 +109,7 @@ position: absolute;
     height: 300px;
     fill: none;
     margin-top: -320;
-    margin-left: -205;
+    margin-left: -132;
 	opacity: 0.8;
 }
 .hour10{
@@ -118,7 +118,7 @@ position: absolute;
     height: 300px;
     fill: none;
     margin-top: -320;
-    margin-left: -235;
+    margin-left: -162;
 	opacity: 0.8;
 }
 .hour11{
@@ -127,7 +127,7 @@ position: absolute;
     height: 300px;
     fill: none;
     margin-top: -320;
-    margin-left: -270;
+    margin-left: -195;
 	opacity: 0.8;
 } 
 .hour12{
@@ -136,7 +136,7 @@ position: absolute;
     height: 300px;
     fill: none;
     margin-top: -355;
-    margin-left: -300;
+    margin-left: -230;
 	opacity: 0.8;
 }
 .hour13{
@@ -144,8 +144,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -320;
-    margin-left: -270;
+    margin-top: -375;
+    margin-left: -255;
 	opacity: 0.8;
 } 
 .hour14{
@@ -153,8 +153,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -320;
-    margin-left: -235;
+    margin-top: -410;
+    margin-left: -265;
 	opacity: 0.8;
 }
 .hour15{
@@ -162,8 +162,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -320;
-    margin-left: -205;
+    margin-top: -440;
+    margin-left: -275;
 	opacity: 0.8;
 }
 .hour16{
@@ -171,8 +171,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -325;
-    margin-left: -170;
+    margin-top: -470;
+    margin-left: -275;
 	opacity: 0.8;
 }
 .hour17{
@@ -180,8 +180,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -320;
-    margin-left: -235;
+    margin-top: -500;
+    margin-left: -260;
 	opacity: 0.8;
 }
 .hour18{
@@ -189,8 +189,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -320;
-    margin-left: -205;
+    margin-top: -530;
+    margin-left: -235;
 	opacity: 0.8;
 }
 .hour19{
@@ -198,8 +198,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -325;
-    margin-left: -170;
+    margin-top: -555;
+    margin-left: -225;
 	opacity: 0.8;
 }
 .hour20{
@@ -207,8 +207,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -320;
-    margin-left: -235;
+    margin-top: -575;
+    margin-left: -200;
 	opacity: 0.8;
 }
 .hour21{
@@ -216,8 +216,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -320;
-    margin-left: -205;
+    margin-top: -580;
+    margin-left: -160;
 	opacity: 0.8;
 }
 .hour22{
@@ -225,8 +225,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -325;
-    margin-left: -170;
+    margin-top: -590;
+    margin-left: -132;
 	opacity: 0.8;
 }
 .hour23{
@@ -234,8 +234,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -320;
-    margin-left: -205;
+    margin-top: -580;
+    margin-left: -95;
 	opacity: 0.8;
 }
 .hour24{
@@ -243,8 +243,8 @@ position: absolute;
     width: 300px;
     height: 300px;
     fill: none;
-    margin-top: -325;
-    margin-left: -170;
+    margin-top: -560;
+    margin-left: -65;
 	opacity: 0.8;
 }
 
