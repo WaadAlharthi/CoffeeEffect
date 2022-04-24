@@ -34,7 +34,8 @@
 		
     <div id="clock" position="relative" width="400"> 
    
- <svg width="400" height="500"><circle class="clock" cx="150" cy="150" r="120" stroke="black" stroke-width="2" fill="none"></circle>
+ <svg width="400" height="500">
+	 <circle class="clock" cx="150" cy="150" r="120" stroke="black" stroke-width="2" fill="none"></circle>
     
 Sorry, your browser does not support inline SVG.
 
@@ -123,137 +124,8 @@ Sorry, your browser does not support inline SVG.
 		</div>
 		
 <script>
-	
-function analogClock(){
-// redraw the red line as a normal black thin line
-const clockSVG = document.querySelector("svg");
-  const svgns = "http://www.w3.org/2000/svg";
-  
-  let newLine1 = document.createElementNS(svgns, "line");
-  newLine1.setAttribute("x1", "100");
-  newLine1.setAttribute("y1", "30");
-  newLine1.setAttribute("x2", "100");
-  newLine1.setAttribute("y2", "10");
-  newLine1.setAttribute("stroke", "black");
-  newLine1.setAttribute("stroke-width", "1");
-  newLine1.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine1);
-  
-  let newLine2 = document.createElementNS(svgns, "line");
-  newLine2.setAttribute("x1", "170");
-  newLine2.setAttribute("y1", "65");
-  newLine2.setAttribute("x2", "180");
-  newLine2.setAttribute("y2", "60");
-  newLine2.setAttribute("stroke", "black");
-  newLine2.setAttribute("stroke-width", "1");
-  newLine2.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine2);
-  
-  let newLine3 = document.createElementNS(svgns, "line");
-  newLine3.setAttribute("x1", "170");
-  newLine3.setAttribute("y1", "100");
-  newLine3.setAttribute("x2", "190");
-  newLine3.setAttribute("y2", "100");
-  newLine3.setAttribute("stroke", "black");
-  newLine3.setAttribute("stroke-width", "1");
-  newLine3.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine3);
-
-  let newLine4 = document.createElementNS(svgns, "line");
-  newLine4.setAttribute("x1", "178");
-  newLine4.setAttribute("y1", "145");
-  newLine4.setAttribute("x2", "168");
-  newLine4.setAttribute("y2", "138");
-  newLine4.setAttribute("stroke", "black");
-  newLine4.setAttribute("stroke-width", "1");
-  newLine4.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine4);
-  
-  let newLine5 = document.createElementNS(svgns, "line");
-  newLine5.setAttribute("x1", "149");
-  newLine5.setAttribute("y1", "174");
-  newLine5.setAttribute("x2", "142");
-  newLine5.setAttribute("y2", "165");
-  newLine5.setAttribute("stroke", "black");
-  newLine5.setAttribute("stroke-width", "1");
-  newLine5.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine5);
-  
-  let newLine6 = document.createElementNS(svgns, "line");
-  newLine6.setAttribute("x1", "100");
-  newLine6.setAttribute("y1", "170");
-  newLine6.setAttribute("x2", "100");
-  newLine6.setAttribute("y2", "190");
-  newLine6.setAttribute("stroke", "black");
-  newLine6.setAttribute("stroke-width", "1");
-  newLine6.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine6);
-
-  let newLine7 = document.createElementNS(svgns, "line");
-  newLine7.setAttribute("x1", "22");
-  newLine7.setAttribute("y1", "145");
-  newLine7.setAttribute("x2", "32");
-  newLine7.setAttribute("y2", "138");
-  newLine7.setAttribute("stroke", "black");
-  newLine7.setAttribute("stroke-width", "1");
-  newLine7.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine7);
-  
-  
-  let newLine8 = document.createElementNS(svgns, "line");
-  newLine8.setAttribute("x1", "50");
-  newLine8.setAttribute("y1", "175");
-  newLine8.setAttribute("x2", "57");
-  newLine8.setAttribute("y2", "165");
-  newLine8.setAttribute("stroke", "black");
-  newLine8.setAttribute("stroke-width", "1");
-  newLine8.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine8);
-  
-  let newLine9 = document.createElementNS(svgns, "line");
-  newLine9.setAttribute("x1", "10");
-  newLine9.setAttribute("y1", "100");
-  newLine9.setAttribute("x2", "30");
-  newLine9.setAttribute("y2", "100");
-  newLine9.setAttribute("stroke", "black");
-  newLine9.setAttribute("stroke-width", "1");
-  newLine9.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine9);
-  
-  let newLine10 = document.createElementNS(svgns, "line");
-  newLine10.setAttribute("x1", "30");
-  newLine10.setAttribute("y1", "65");
-  newLine10.setAttribute("x2", "20");
-  newLine10.setAttribute("y2", "60");
-  newLine10.setAttribute("stroke", "black");
-  newLine10.setAttribute("stroke-width", "1");
-  newLine10.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine10);
-  
-  let newLine11 = document.createElementNS(svgns, "line");
-  newLine11.setAttribute("x1", "57");
-  newLine11.setAttribute("y1", "35");
-  newLine11.setAttribute("x2", "50");
-  newLine11.setAttribute("y2", "25");
-  newLine11.setAttribute("stroke", "black");
-  newLine11.setAttribute("stroke-width", "1");
-  newLine11.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine11);
-  
-  let newLine12 = document.createElementNS(svgns, "line");
-  newLine12.setAttribute("x1", "100");
-  newLine12.setAttribute("y1", "30");
-  newLine12.setAttribute("x2", "100");
-  newLine12.setAttribute("y2", "10");
-  newLine12.setAttribute("stroke", "black");
-  newLine12.setAttribute("stroke-width", "1");
-  newLine12.setAttribute("fill", "#none");
-  clockSVG.appendChild(newLine12);
-
-}
   
 function hideClockGifs(cof, med, bed){
-   analogClock();
   
   document.querySelector(".first").src = 'HD_transparent_picture.png';
   document.querySelector(".second").src = 'HD_transparent_picture.png';
@@ -370,101 +242,6 @@ switch(med) {
 	  break;
 }
   
-const clockSVG = document.querySelector("svg");
-let newLine = document.createElementNS("http://www.w3.org/2000/svg", "line");	
-newLine.setAttribute("stroke", "red");
-newLine.setAttribute("stroke-width", "8");
-newLine.setAttribute("fill", "#none");
-	
-switch(bed) {
-  case 1:
-  case 13:
-    newLine.setAttribute("x1", "142");
-    newLine.setAttribute("y1", "35");
-    newLine.setAttribute("x2", "149");
-    newLine.setAttribute("y2", "25");
-	  break;
-  case 2:
-  case 14:
-    newLine.setAttribute("x1", "170");
-    newLine.setAttribute("y1", "65");
-    newLine.setAttribute("x2", "180");
-    newLine.setAttribute("y2", "60");
-	  break;
-  case 3:
-  case 15:
-    newLine.setAttribute("x1", "170");
-    newLine.setAttribute("y1", "100");
-    newLine.setAttribute("x2", "190");
-    newLine.setAttribute("y2", "100");
-	  break;
-  case 4:
-  case 16:
-    newLine.setAttribute("x1", "178");
-    newLine.setAttribute("y1", "145");
-    newLine.setAttribute("x2", "168");
-    newLine.setAttribute("y2", "138");
-	  break;
-  case 5:
-  case 17:
-    newLine.setAttribute("x1", "149");
-    newLine.setAttribute("y1", "175");
-    newLine.setAttribute("x2", "142");
-    newLine.setAttribute("y2", "165");
-	  break;
-  case 6:
-  case 18:
-    newLine.setAttribute("x1", "100");
-    newLine.setAttribute("y1", "170");
-    newLine.setAttribute("x2", "100");
-    newLine.setAttribute("y2", "190");
-	  break;
-  case 7:
-  case 19:
-    newLine.setAttribute("x1", "22");
-    newLine.setAttribute("y1", "145");
-    newLine.setAttribute("x2", "32");
-    newLine.setAttribute("y2", "138");
-	  break;
-  case 8:
-  case 20:
-    newLine.setAttribute("x1", "50");
-    newLine.setAttribute("y1", "175");
-    newLine.setAttribute("x2", "57");
-    newLine.setAttribute("y2", "165");
-	  break;
-  case 9:
-  case 21:
-    newLine.setAttribute("x1", "10");
-    newLine.setAttribute("y1", "100");
-    newLine.setAttribute("x2", "30");
-    newLine.setAttribute("y2", "100");
-	  break;
-  case 10:
-  case 22:
-    newLine.setAttribute("x1", "30");
-    newLine.setAttribute("y1", "65");
-    newLine.setAttribute("x2", "20");
-    newLine.setAttribute("y2", "60");
-	  break;
-  case 11:
-  case 23:
-    newLine.setAttribute("x1", "57");
-    newLine.setAttribute("y1", "35");
-    newLine.setAttribute("x2", "50");
-    newLine.setAttribute("y2", "25");
-	  break;
-  case 12:
-  case 24:
-    newLine.setAttribute("x1", "100");
-	  newLine.setAttribute("y1", "30");
-    newLine.setAttribute("x2", "100");
-    newLine.setAttribute("y2", "10");
-	  break;
-}
-	
-clockSVG.appendChild(newLine);
-
 }
   
 function displayGraph() {
