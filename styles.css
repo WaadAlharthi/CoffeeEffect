@@ -104,138 +104,138 @@ position: absolute;
 	opacity: 0.8;
 }
 .hour9{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -320;
-    margin-left: -132;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -320;
+  margin-left: -132;
 	opacity: 0.8;
 }
 .hour10{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -320;
-    margin-left: -162;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -320;
+  margin-left: -162;
 	opacity: 0.8;
 }
 .hour11{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -320;
-    margin-left: -195;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -320;
+  margin-left: -195;
 	opacity: 0.8;
 } 
 .hour12{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -355;
-    margin-left: -230;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -355;
+  margin-left: -230;
 	opacity: 0.8;
 }
 .hour13{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -375;
-    margin-left: -255;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -375;
+  margin-left: -255;
 	opacity: 0.8;
 } 
 .hour14{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -410;
-    margin-left: -265;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -410;
+  margin-left: -265;
 	opacity: 0.8;
 }
 .hour15{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -440;
-    margin-left: -275;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -440;
+  margin-left: -275;
 	opacity: 0.8;
 }
 .hour16{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -470;
-    margin-left: -275;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -470;
+  margin-left: -275;
 	opacity: 0.8;
 }
 .hour17{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -500;
-    margin-left: -260;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -500;
+  margin-left: -260;
 	opacity: 0.8;
 }
 .hour18{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -530;
-    margin-left: -235;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -530;
+  margin-left: -235;
 	opacity: 0.8;
 }
 .hour19{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -555;
-    margin-left: -225;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -555;
+  margin-left: -225;
 	opacity: 0.8;
 }
 .hour20{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -575;
-    margin-left: -200;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -575;
+  margin-left: -200;
 	opacity: 0.8;
 }
 .hour21{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -580;
-    margin-left: -160;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -580;
+  margin-left: -160;
 	opacity: 0.8;
 }
 .hour22{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -590;
-    margin-left: -132;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -590;
+  margin-left: -132;
 	opacity: 0.8;
 }
 .hour23{
-position: absolute;
-    width: 300px;
-    height: 300px;
-    fill: none;
-    margin-top: -580;
-    margin-left: -95;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: none;
+  margin-top: -580;
+  margin-left: -95;
 	opacity: 0.8;
 }
 .hour24{
@@ -245,6 +245,243 @@ position: absolute;
     fill: none;
     margin-top: -560;
     margin-left: -65;
+	opacity: 0.8;
+}
+
+.bedhour1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -435;
+  margin-left: 25;
+	opacity: 0.8;
+}
+.bedhour2 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -415;
+  margin-left: 50;
+	opacity: 0.8;
+}
+
+.bedhour3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -390;
+  margin-left: 70;
+	opacity: 0.8;
+}
+
+.bedhour4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -365;
+  margin-left: 85;
+	opacity: 0.8;
+}
+.bedhour5 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -335;
+  margin-left: 90;
+	opacity: 0.8;
+}
+.bedhour6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -300;
+  margin-left: 80;
+	opacity: 0.8;
+}
+.bedhour7 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -270;
+  margin-left: 75;
+	opacity: 0.8;
+}
+
+.bedhour8 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -245;
+  margin-left: 50;
+	opacity: 0.8;
+}
+
+.bedhour9 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -225;
+  margin-left: 25;
+	opacity: 0.8;
+}
+
+.bedhour10 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -215;
+  margin-left: -5;
+	opacity: 0.8;
+}
+
+
+.bedhour11 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -215;
+  margin-left: -40;
+	opacity: 0.8;
+}
+
+.bedhour12 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -220;
+  margin-left: -70;
+	opacity: 0.8;
+}
+
+.bedhour13 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -235;
+  margin-left: -95;
+	opacity: 0.8;
+}
+
+.bedhour14 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -255;
+  margin-left: -120;
+	opacity: 0.8;
+}
+
+.bedhour15 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -275;
+  margin-left: -145;
+	opacity: 0.8;
+}
+
+.bedhour16 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -305;
+  margin-left: -155;
+	opacity: 0.8;
+}
+
+.bedhour17 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -335;
+  margin-left: -160;
+	opacity: 0.8;
+}
+
+.bedhour18 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -370;
+  margin-left: -155;
+	opacity: 0.8;
+}
+
+.bedhour19 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -400;
+  margin-left: -145;
+	opacity: 0.8;
+}
+
+.bedhour20 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -420;
+  margin-left: -120;
+	opacity: 0.8;
+}
+
+.bedhour21 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -440;
+  margin-left: -95;
+	opacity: 0.8;
+}
+
+.bedhour22 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -450;
+  margin-left: -65;
+	opacity: 0.8;
+}
+
+.bedhour23 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -460;
+  margin-left: -35;
+	opacity: 0.8;
+}
+
+.bedhour24 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  fill:none;
+	margin-top: -450;
+  margin-left: 0;
 	opacity: 0.8;
 }
 
