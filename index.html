@@ -724,11 +724,11 @@ function displayGraph() {
 	
   var stripeStart = 24;
   var stripeEnd = 25;
-  if ( Math.max(endX, bedX) < 24)
+  if ( Math.max(endX, bedX) >= 24)
   {
     stripeEnd = Math.max(endX, bedX) +3;
   }
-  else //if end|bed <= 24
+  else //if end|bed < 24
   {
     stripeEnd = 25;
   }
@@ -761,13 +761,13 @@ function displayGraph() {
 		backgroundColor: "#fffae6",
 		title:{
 	},
-		toolTipContent: "{x}: {y}mg {indexLabel} ",
       data: [
-      {        
+      {   
         type: "splineArea",
 	      color: "rgba(215,130,55,.6)",
         yValueFormatString:"~#",
-        highlightEnabled: true,        
+        highlightEnabled: true,  
+	      toolTipContent: "{x}: ~{y}mg {indexLabel}",
         dataPoints: datapoints
       }
       ]
