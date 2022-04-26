@@ -67,7 +67,6 @@ input{
 	opacity: 0.8;
     }
 
-
      .cofhour5{
          position: absolute;
       width: 300px;
@@ -701,7 +700,7 @@ position: absolute;
   height: 70px;
   fill:none;
 	margin-top: -450;
-  margin-left: 0;
+  margin-left: 1;
 	opacity: 0.8;
 }
 
