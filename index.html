@@ -531,7 +531,7 @@ function displayGraph() {
   var lowY = 0;
 	if ((secondX-startX)<10 ) 
   {
-    lowX= secondX-1;
+    lowX= secondX;
     lowY = ((startY/10)*(10-(lowX -startX)));
   } 	
 	
@@ -613,7 +613,7 @@ function displayGraph() {
     lowY = 0;
 	  if ((secondX-startX)<10 ) 
     {
-      lowX= secondX-1;
+      lowX= secondX;
       lowY = ((startY/10)*(10-(lowX -startX)));
     } 
     
@@ -639,7 +639,7 @@ function displayGraph() {
         datapoints =  [
 		    {x: startX, y: startY, toolTipContent: startLabel},
 	      {x: lowX, y: lowY},
-        {x: secondX-1, y:0},
+        {x: secondX, y:0},
         {x: secondX, y: secondY, toolTipContent: secondLabel},
 		    {x: endX, y: endY, toolTipContent: "Caffeine can last up to 10 hours"},
         {x: bedX, y: bedY, toolTipContent:"This level of caffeine should not affect your sleep quality" , indexLabel: "This level of caffeine should not affect your sleep quality"},
@@ -671,7 +671,7 @@ function displayGraph() {
         datapoints =  [
 		    {x: startX, y: startY, toolTipContent: startLabel},
 	      {x: lowX, y: lowY},
-        {x: secondX-1, y:0},
+        {x: secondX, y:0},
         {x: secondX, y: secondY, toolTipContent: secondLabel},
 		    {x: bedX, y: bedY, color: "red", toolTipContent: "This level of caffeine may affect your sleep quality!", indexLabel: "This level of caffeine may affect your sleep quality!"},
         {x: endX, y: endY, toolTipContent: "Caffeine can last up to 10 hours"},
@@ -682,6 +682,44 @@ function displayGraph() {
     }
     
   }
+	
+	
+	else if(cof == med)
+  {
+    startX = cof;
+    startY = (80*quantity)+130;
+    
+    if (bed> startX+10)
+    {
+      endX = startX+10;
+      endY= 0;
+      bedX= bed;
+      bedY= 0; //add label
+      datapoints =  [
+		    {x:startX, y: startY, toolTipContent: "Last Coffee"},
+		    {x: endX, y: endY, toolTipContent: "Caffeine can last up to 10 hours"},
+        {x: bedX, y: bedY, toolTipContent: "This level of caffeine should not affect your sleep quality", indexLabel: "This level of caffeine should not affect your sleep quality"},
+	      {x: bedX+3}
+	    ];
+	    document.querySelector("#result1").innerHTML = "This level of caffeine should not affect your sleep quality";
+    	}
+    else if (bed<= startX+10)
+    {
+      bedX= bed;
+      bedY= (startY/10)*(10-(bedX-startX)); //add label
+      endX = startX+10;
+      endY= 0;
+      datapoints =  [
+		    {x:startX, y: startY, toolTipContent: "Last Coffee"},
+        {x: bedX, y: bedY, color: "red", toolTipContent:"This level of caffeine may affect your sleep quality!", indexLabel: "This level of caffeine may affect your sleep quality!"},
+        {x: endX, y: endY, toolTipContent: "Caffeine can last up to 10 hours"},
+	      {x: endX+3}
+	    ];
+	  document.querySelector("#result1").innerHTML = "This level of caffeine may affect your sleep quality!";
+    }
+    
+  }
+	
   var stripeStart = 24;
   var stripeEnd = 25;
   if ( Math.max(endX, bedX) > 24)
