@@ -594,7 +594,8 @@ function displayGraph() {
       startY = 80*quantity;
       startLabel = "Last Coffee";
       secondX = med;
-      secondY = ((startY/10)*(10-(secondX -startX)))+130;
+      var distance = Math.max((10-(secondX -startX)),0);
+      secondY = ((startY/10)*distance)+130;
       secondLabel = "Caffeinated medicine";
     }
     
@@ -604,7 +605,8 @@ function displayGraph() {
       startY = 130;
       startLabel = "Caffeinated medicine";
       secondX = cof;
-      secondY = ((startY/10)*(10-(secondX -startX)))+(80*quantity); 
+      var distance = Math.max((10-(secondX -startX)),0);
+      secondY = ((startY/10)*distance)+(80*quantity); 
       secondLabel = "Last Coffee";
     }
     
@@ -722,7 +724,7 @@ function displayGraph() {
 	
   var stripeStart = 24;
   var stripeEnd = 25;
-  if ( Math.max(endX, bedX) > 24)
+  if ( Math.max(endX, bedX) < 24)
   {
     stripeEnd = Math.max(endX, bedX) +3;
   }
