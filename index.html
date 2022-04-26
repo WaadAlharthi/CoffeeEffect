@@ -563,9 +563,9 @@ function displayGraph() {
       bedX= bed;
       bedY= 0; //add label
       datapoints =  [
-		    {x:startX, y: startY, indexLabel: "Last Coffee"},
-		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
-        {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
+		    {x:startX, y: startY, toolTipContent: "Last Coffee"},
+		    {x: endX, y: endY, toolTipContent: "Caffeine can last up to 10 hours"},
+        {x: bedX, y: bedY, toolTipContent: "This level of caffeine should not affect your sleep quality", indexLabel: "This level of caffeine should not affect your sleep quality"},
 	      {x: bedX+3}
 	    ];
 	    document.querySelector("#result1").innerHTML = "This level of caffeine should not affect your sleep quality";
@@ -577,9 +577,9 @@ function displayGraph() {
       endX = startX+10;
       endY= 0;
       datapoints =  [
-		    {x:startX, y: startY, indexLabel: "Last Coffee"},
-        {x: bedX, y: bedY, color: "red", indexLabel: "This level of caffeine may affect your sleep quality!"},
-        {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+		    {x:startX, y: startY, toolTipContent: "Last Coffee"},
+        {x: bedX, y: bedY, color: "red", toolTipContent:"This level of caffeine may affect your sleep quality!", indexLabel: "This level of caffeine may affect your sleep quality!"},
+        {x: endX, y: endY, toolTipContent: "Caffeine can last up to 10 hours"},
 	      {x: endX+3}
 	    ];
 	  document.querySelector("#result1").innerHTML = "This level of caffeine may affect your sleep quality!";
@@ -626,23 +626,23 @@ function displayGraph() {
       if ((secondX-startX)<10)
       {
         datapoints =  [
-		    {x: startX, y: startY, indexLabel: startLabel},
+		    {x: startX, y: startY, toolTipContent: startLabel},
 	      {x: lowX, y: lowY},	      
-        {x: secondX, y: secondY, indexLabel: secondLabel},
-		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
-        {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
+        {x: secondX, y: secondY, toolTipContent: secondLabel},
+		    {x: endX, y: endY, toolTipContent: "Caffeine can last up to 10 hours"},
+        {x: bedX, y: bedY, toolTipContent:"This level of caffeine should not affect your sleep quality" , indexLabel: "This level of caffeine should not affect your sleep quality"},
 	      {x: bedX+3}
 	    ];
       }
       else // gap
       {
         datapoints =  [
-		    {x: startX, y: startY, indexLabel: startLabel},
+		    {x: startX, y: startY, toolTipContent: startLabel},
 	      {x: lowX, y: lowY},
         {x: secondX-1, y:0},
-        {x: secondX, y: secondY, indexLabel: secondLabel},
-		    {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
-        {x: bedX, y: bedY, indexLabel: "This level of caffeine should not affect your sleep quality"},
+        {x: secondX, y: secondY, toolTipContent: secondLabel},
+		    {x: endX, y: endY, toolTipContent: "Caffeine can last up to 10 hours"},
+        {x: bedX, y: bedY, toolTipContent:"This level of caffeine should not affect your sleep quality" , indexLabel: "This level of caffeine should not affect your sleep quality"},
 	      {x: bedX+3}
 	    ];
       }
@@ -658,23 +658,23 @@ function displayGraph() {
     if ((secondX-startX)<10)
       {
       datapoints =  [
-		    {x: startX, y: startY, indexLabel: startLabel},
+		    {x: startX, y: startY, toolTipContent: startLabel},
 	      {x: lowX, y: lowY},
-        {x: secondX, y: secondY, indexLabel: secondLabel},
-		    {x: bedX, y: bedY, color: "red", indexLabel: "This level of caffeine may affect your sleep quality!"},
-        {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+        {x: secondX, y: secondY, toolTipContent: secondLabel},
+		    {x: bedX, y: bedY, color: "red", toolTipContent:"This level of caffeine may affect your sleep quality!" , indexLabel: "This level of caffeine may affect your sleep quality!"},
+        {x: endX, y: endY, toolTipContent: "Caffeine can last up to 10 hours"},
 	      {x: endX+3}
 	    ];
       }
       else // gap
       {
         datapoints =  [
-		    {x: startX, y: startY, indexLabel: startLabel},
+		    {x: startX, y: startY, toolTipContent: startLabel},
 	      {x: lowX, y: lowY},
         {x: secondX-1, y:0},
-        {x: secondX, y: secondY, indexLabel: secondLabel},
-		    {x: bedX, y: bedY, color: "red", indexLabel: "This level of caffeine may affect your sleep quality!"},
-        {x: endX, y: endY, indexLabel: "Caffeine can last up to 10 hours"},
+        {x: secondX, y: secondY, toolTipContent: secondLabel},
+		    {x: bedX, y: bedY, color: "red", toolTipContent: "This level of caffeine may affect your sleep quality!", indexLabel: "This level of caffeine may affect your sleep quality!"},
+        {x: endX, y: endY, toolTipContent: "Caffeine can last up to 10 hours"},
 	      {x: bedX+3}
 	    ];
       }
@@ -682,7 +682,17 @@ function displayGraph() {
     }
     
   }
-	
+  var stripeStart = 24;
+  var stripeEnd = 25;
+  if ( Math.max(endX, bedX) > 24)
+  {
+    stripeEnd = Math.max(endX, bedX) +3;
+  }
+  else //if end|bed <= 24
+  {
+    stripeEnd = 25;
+  }
+     
 	
 	var splineAreaChart = new CanvasJS.Chart("splineArea",
    { 
@@ -699,8 +709,8 @@ function displayGraph() {
     axisX:{	
       stripLines:[
 	      {
-		startValue:(24),
-		endValue:(endX+4),                
+		startValue:stripeStart,
+		endValue:stripeEnd,                
 		color:"#fffdf7"                      
 		}
 	],
